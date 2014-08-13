@@ -1,0 +1,92 @@
+---
+---
+
+/*
+ *
+ *  Skinny Bones Jekyll Starter
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
+
+// Partials
+@import "variables";
+@import "vendor/bourbon/bourbon";
+@import "grid-settings";
+@import "vendor/neat/neat";
+@import "vendor/font-awesome/font-awesome";
+@import "mixins";
+@import "reset";
+@import "base";
+@import "helpers";
+@import "buttons";
+@import "badges";
+@import "bullets";
+@import "sliding-menu";
+@import "notices";
+@import "animations";
+@import "layout";
+@import "pygments";
+
+.page-lead {
+  padding: 1em 0;
+}
+
+.page-lead-content {
+  padding: 1em;
+}
+
+#masthead {
+  background-color: $black;
+}
+
+.btn-inverse.register {
+  background-color: $primary-color;
+  margin-top: 0.6em;
+  color: $white;
+}
+
+.page-lead.desc {
+  text-align: left;
+  background-color: $primary-color;
+  .content {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.tile-half {
+  @include outer-container;
+  margin-bottom: $gutter;
+  @include media($micro) {
+    @include fill-parent;
+  }
+  @include media($small) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+  @include media($medium) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+}
+
+.profile {
+  margin-top: 0;
+  padding-left: 25px;
+  overflow: hidden;
+  li {
+    list-style: none;
+  }
+  .speaker-name {
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.profile-img {
+  float: left;
+  border-radius: 50%;
+}
