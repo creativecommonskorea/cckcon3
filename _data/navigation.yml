@@ -3,19 +3,19 @@
 - title: about
   url: /
   excerpt: about CCKcon 2014
-  image: 400x250.gif
+  # image: 400x250.gif
 
 - title: schedule
   url: /schedule/
   excerpt: Time table of programs
-  image: 400x250.gif
+  # image: 400x250.gif
 
 - title: speakers
   url: /speakers/
   excerpt: Speakers of sessions
-  image: 400x250.gif
+  # image: 400x250.gif
 
 - title: sponsors
   url: /sponsors/
   excerpt: Sponsors of CCKcon 2014
-  image: 400x250.gif
+  # image: 400x250.gif

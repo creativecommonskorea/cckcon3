@@ -1,17 +1,17 @@
-# Speakers
+# Sponsors
 
-- name_ko: 한국저작권협회
-  name_en:
-  title_ko: 서울시장<br />전 희망제작소 이사
+- title_ko: 한국저작권위원회
   title_en:
-  desc_ko: 서울시는 공유도시를 선언하면서 전세계에서 선도적인 도시로 주목받고 있다. 공유도시의 철학적인 의미와 어떤 성과를 이뤄내고 있는지를 들어보고사 한다.
+  desc_ko: "한국저작권위원회는 2009년 7월 23일 새롭게 통합 출범한 후 급변하는 저작권 환경 변화 속에서 국내 · 외 저작권 보호 및 공정한 이용환경 조성을 위하여 다각적인 사업을 능동적으로 추진하여 왔으며, 우리나라가 글로벌 저작권 선도국으로서 자리매김하는데 앞장서고 있습니다."
   desc_en:
-  profile_img: 400x250.gif
+  level: gold
+  logo_img: copyright.png
 
-- name_ko: 라이언 머클리
-  name_en: Ryan Merkley
-  title_ko: 크리에이티브 커먼즈 대표이사<br />전 모질라재단 COO
-  title_en: Creative Commons CEO<br />Ex Mozilla Foundation COO
+- title_ko: airbnb
+  title_en:
   desc_ko:
+    "2008년 8월에 창립되어 캘리포니아 주 샌프란시스코에 본사를 둔 에어비앤비는 온라인 및 모바일에서 전 세계의 숙소들을 사람들이 올리고, 발견하고, 예약할 수 있는 공동 시장입니다.
+    에어비엔비는 사람들을 특별한 여행 경험으로 이어줍니다. 하룻밤 지낼 아파트, 일주일 동안 지낼 수 있는 성, 한 달 동안 지낼 수 있는 빌라 등 다양한 가격대의 숙소가 세계 34,000개 도시, 190개국에서 여러분을 기다리고 있습니다."
   desc_en:
-  profile_img: 400x250.gif
+  level: silver
+  logo_img: airbnb.png

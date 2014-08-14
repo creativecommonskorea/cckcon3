@@ -175,7 +175,7 @@
 }
 
 .card {
-  width: 60%;
+  min-width: 60%;
   margin: 0 auto;
   padding: 4em;
   text-align: center;
@@ -207,4 +207,14 @@
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.more {
+  float: right;
+  text-decoration: none;
+  margin-top: 2.3em;
+}
+
+.sliding-menu-content .menu-item>li .btn {
+  margin-left: 170px;
 }

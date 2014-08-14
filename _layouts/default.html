@@ -69,7 +69,7 @@
             {% include speaker.html %}
           {% endfor %}
         {% when '/sponsors/' %}
-          {% for sponsor in site.data.sponsors %}
+          {% for sponsor in site.data.sponsors | group_by:"level" %}
             {% include sponsor.html %}
           {% endfor %}
         {% else %}

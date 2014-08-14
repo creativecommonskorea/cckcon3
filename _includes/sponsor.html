@@ -1,11 +1,18 @@
+  <div class="speaker-header clearfix">
+    <div class="wrap"><h3 class="{{ sponsor.level }}">{{ sponsor.level | upcase }}</h3></div>
+  </div>
+
+  <hr style="visibility: hidden;" />
+
   <div class="tile-one-third">
-    <img src="{{ site.url }}/images/{{ sponsor.profile_img }}" alt="{{ sponsor.name_ko }}" class="profile-img" />
+    <img src="{{ site.url }}/images/{{ sponsor.logo_img }}" alt="{{ sponsor.title_ko }}" class="logo-img" />
   </div>
 
   <div class="tile-two-third">
     <ul class="profile">
-      <li class="sponsor-name">{{ sponsor.name_ko }}</li>
       <li class="sponsor-title">{{ sponsor.title_ko }}</li>
       <li class="sponsor-desc">{{ sponsor.desc_ko }}</li>
     </ul>
   </div>
+
+
