@@ -8,6 +8,6 @@ modified: 2014-08-13 10:30:00 +0900
 excerpt:
 tags: []
 image:
-  feature: mainbanner.jpg
+  feature: mainbg.jpg
 ads: false  
 ---
