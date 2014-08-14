@@ -178,7 +178,11 @@
   width: 60%;
   margin: 0 auto;
   padding: 4em;
+  text-align: center;
   background-color: $white;
+  p {
+    margin: 1em 0;
+  }
 }
 
 .fixed {
