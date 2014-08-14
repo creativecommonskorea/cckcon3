@@ -37,6 +37,7 @@
     </style>
 
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/easy-responsive-tabs.css">
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
       <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
@@ -45,7 +46,7 @@
 
   </head>
 
-  <body>
+  <body class="home">
 
     {% if page.image.feature %}
     <div class="page-lead" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
@@ -65,13 +66,7 @@
     <div class="page-lead desc">
       <div class="wrap page-lead-content">
         <div class="content">
-          <p>Now is the age of sharing.<br />The whole globe is connected. Even things are connected.</p>
-          <p>The power of sharing and connectivity that techology carries is making better out of the world. Here, CCKOREA International Conference invites you to have fresh inspirations from people whose efforts are bringing positive changes through technology.</p>
-          <ul>
-            <li>Date &amp; Time : September 16 (Tues.), 10:00 AM to 6:00 PM</li>
-            <li>Venue : Ferrum Hall @ Ferrum Tower 3F (Junggu Suhadong, Seoul)</li>
-            <li>Hosted by : Creative Commons Korea  </li>
-          </ul>
+          {{ content }}
         </div>
       </div>
       </div><!-- /.page-lead-content -->
@@ -79,26 +74,68 @@
 
     <div id="page-wrapper">
       {% include browser-upgrade.html %}
-
-      <div id="main" role="main">
-        <div class="wrap">
-          <div class="page-title">
-            <h1>{{ page.title }}</h1>
-            {% if page.excerpt %}<h2>{{ page.excerpt }}</h2>{% endif %}
-          </div>
-          <div class="archive-wrap">
-            <div class="page-content">
-              {{ content }}
-            </div><!-- /.page-content -->
-          </div class="archive-wrap"><!-- /.archive-wrap -->
-        </div><!-- /.wrap -->
-      </div><!-- /#main -->
-
-      {% include footer.html %}
     </div>
 
+    <div class="speaker-header">
+      <div class="wrap"><h3>Speakers</h3></div>
+    </div>
+
+    <div class="speaker-content wrap clearfix">
+      <div class="tiles">
+      {% for speaker in site.data.speakers %}
+        {% include speaker.html %}
+      {% endfor %}
+      </div><!-- /.tiles -->
+    </div>
+
+    <div id="demoTab">
+      <div class="wrap">
+        <ul class="resp-tabs-list">
+          <li><h3>Venue</h3></li>
+          <li><h3>Press Release</h3></li>
+          <li><h3>Sponsors</h3></li>
+        </ul>
+      </div>
+      <div class="resp-tabs-container">
+        <div>
+          <div class="wrap">
+            <ul>
+              <li>컨퍼런스 장소</li>
+            </ul>
+            <table cellpadding="0" cellspacing="0" width="536"> <tr> <td style="border:1px solid #cecece;"><a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5673453&lng=126.9838691&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=37.5670398%2C126.9838747%3AZ11%3A0.0220265%2C0.0085386&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1407983418790_-639009795" width="534" height="360" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr></table>
+          </div>
+        </div>
+        <div>
+          <div class="wrap">
+            <div class="card">
+            <p>2014 CC Global Conference는 공유와 협력으로 긍적적인 변화를 만들고 있는 전세계 혁신가들이 한자리에 모이는 자리입니다.</p>
+            <p>현장 취재, 연사 인터뷰 등의 문의는 아래로 연락주세요!</p>
+            <p>담당 권난실</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="wrap">
+            <div class="card">
+            <p>2014 CC Global Conference는 공유와 협력으로 긍적적인 변화를 만들고 있는 전세계 혁신가들이 한자리에 모이는 자리입니다.</p>
+            <p>현장 취재, 연사 인터뷰 등의 문의는 아래로 연락주세요!</p>
+            <p>담당 강현숙</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+    {% include footer.html %}
+
+
     <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
+    <script src="{{ site.url }}/js/vendor/easyResponsiveTabs.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
+    <script>
+      $('#demoTab').easyResponsiveTabs();
+    </script>
 
   </body>
 
