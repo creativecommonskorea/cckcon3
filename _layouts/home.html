@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="subject" content="2014 CC Korea 국제 컨퍼런스">
+    <meta name="title" content="2014 CC Korea 국제 컨퍼런스">
+    <meta name="author" content="Creative Commons Korea">
+    <meta name="keywords" content="Creative Commons Korea, Internationl Conference, Share, Connect, Creativity, Sharing City, Civic Hacking">
     <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
     {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
@@ -103,7 +107,7 @@
       <div class="resp-tabs-container">
         <div>
           <div class="wrap">
-            <div class="map">
+            <div class="map card">
               <h2>위치</h2>
               <a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5673453&lng=126.9838691&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=37.5670398%2C126.9838747%3AZ11%3A0.0220265%2C0.0085386&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1407983418790_-639009795" width="534" height="360" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
               {% assign conf = site.data.conf %}
@@ -139,7 +143,7 @@
   </div>
 
 
-    {% include footer.html %}
+  {% include footer.html %}
 
 
     <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
