@@ -42,6 +42,11 @@
   height: 600px;
 }
 
+.page-lead-content.hidden {
+  visibility: hidden;
+  height: 400px;
+}
+
 #masthead {
   background-color: $black;
 }
