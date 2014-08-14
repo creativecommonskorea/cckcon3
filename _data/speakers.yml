@@ -6,12 +6,44 @@
   title_en:
   desc_ko: 서울시는 공유도시를 선언하면서 전세계에서 선도적인 도시로 주목받고 있다. 공유도시의 철학적인 의미와 어떤 성과를 이뤄내고 있는지를 들어보고사 한다.
   desc_en:
-  profile_img: 160x160.gif
+  profile_img: wonsoon.png
+
+- name_ko: 윤종수
+  name_en:
+  title_ko: "(법)세종 대표변호사<br />CCKOREA 대표, 글로벌 CC 이사"
+  title_en:
+  desc_ko: "10년전 CCL 한국 버젼 런칭  지적재산권,인터넷거버넌스 등 정보문화운동을 오랫동안 펼쳐왔다."
+  desc_en:
+  profile_img: yoon.png
 
 - name_ko: 라이언 머클리
   name_en: Ryan Merkley
   title_ko: 크리에이티브 커먼즈 대표이사<br />전 모질라재단 COO
   title_en: Creative Commons CEO<br />Ex Mozilla Foundation COO
-  desc_ko:
+  desc_ko: "모질라재단에서 오픈소스프로젝트를 주도적으로 진행하고 2014년 CC CEO로 합류하게 되었다. 열린정부, 오픈소스 등 오픈 운동을 오랫동안 펼쳐왔다."
   desc_en:
-  profile_img: 160x160.gif
+  profile_img: ryan.png
+
+- name_ko: Hal Seki
+  name_en: Hal Seki
+  title_ko: "Code for Japan 대표<br />Ushahidi 인증개발자"
+  title_en:
+  desc_ko: "일본에서 Civic Hacker로 활동중이다. 쓰나미와 원전사고로 폐해가 된 나미에 지역의 주민을 돕기 위해서 420명의 개발자가 모여서 앱,웹 서비스를 개발하는 등 다양한 프로젝트의 리더로 활동하고 있다."
+  desc_en:
+  profile_img: hal.png
+
+- name_ko: Helene Hahn
+  name_en: Helene Hahn
+  title_ko: "OKF 독일<br />코딩다빈치 프로젝트 PM"
+  title_en:
+  desc_ko: "유럽의 문화예술을 디지털화하고 공유, 활용하여 게임, 웹서비스 등을 만들 수 있도록 하는 코딩 다빈치 프로젝트의 PM로 일하고 있다."
+  desc_en:
+  profile_img: helene.png
+
+- name_ko: Todd Porter
+  name_en: Todd Porter
+  title_ko: "Fab Cafe Global 설립자"
+  title_en:
+  desc_ko: "유럽의 문화예술을 디지털화하고 공유, 활용하여 게임, 웹서비스 등을 만들 수 있도록 하는 코딩 다빈치 프로젝트의 PM로 일하고 있다."
+  desc_en:
+  profile_img: todd.png

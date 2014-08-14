@@ -45,7 +45,7 @@
 
   </head>
 
-  <body>
+  <body class="default">
     {% include header.html %}
     {% include navigation-sliding.html %}
 
@@ -59,19 +59,156 @@
 
     <div id="page-wrapper">
       {% include browser-upgrade.html %}
+      <div class="speaker-header">
+        <div class="wrap"><h3>{{ page.title | upcase }}</h3></div>
+      </div>
       <div class="wrap">
-        <h1>{{page.image.feature}}</h1>
-        {{ content }}
+        {% case page.url %}
+        {% when '/speakers/' %}
+          {% for speaker in site.data.speakers %}
+            {% include speaker.html %}
+          {% endfor %}
+        {% when '/sponsors/' %}
+          {% for sponsor in site.data.sponsors %}
+            {% include sponsor.html %}
+          {% endfor %}
+        {% else %}
+        <div class="schedule">
+          <table style="width:100%;">
+          {{ content }}
+<thead>
+<tr style="background-color: gray;">
+<th>일정</th>
+<th>소주제</th>
+<th>제목</th>
+<th>강연자</th>
+</tr>
+</thead>
+<tbody style="text-align:center;">
+<tr style="height: 40px;">
+<td>09:30 ~ 10:00</td>
+<td>등록</td>
+<td>등록</td>
+<td></td>
+</tr>
+<tr style="height: 40px;">
+<td>10:00 ~ 10:10</td>
+<td>인사말</td>
+<td></td>
+<td>서정욱 / CCKOREA 이사장</td>
+</tr>
+<tr style="height: 40px;">
+<td>10:10 ~ 10:40(30')</td>
+<td>여는 강연</td>
+<td>"모든 것을 공유하라"</td>
+<td>Ryan Merkley / CEO of Creative Commons</td>
+</tr>
+<tr style="height: 40px;">
+<td>10:45 ~ 11:05(20')</td>
+<td rowspan="3">창작과 공유<br>
+"Creativity"</td>
+<td>과거의 문화예술이 재창조되다</td>
+<td>Helene Hahn / Coding da vinci(코딩다빈치)</td>
+</tr>
+<tr style="height: 40px;">
+<td>11:10 ~ 11:30(20')</td>
+<td>"지속가능한 Maker Space"</td>
+<td>Chiaki Hayashi / Co-Founder of Fab Cafe Tokyo(펩까페 도쿄)</td>
+</tr>
+<tr style="height: 40px;">
+<td>11:35 ~ 11:55(20')</td>
+<td>Maker와 창조성의 상관관계</td>
+<td>한호 / 저작권위원회</td>
+</tr>
+<tr style="height: 40px;">
+<td style="border-top: 1px solid gray; border-bottom: 1px solid gray;">11:55
+~ 1:20(85')</td>
+<td colspan="3" style="border-top: 1px solid gray; border-bottom: 1px solid gray;">
+점심시간</td>
+</tr>
+<tr style="height: 40px;">
+<td>1:20 ~ 1:50(30')</td>
+<td>여는 강연</td>
+<td>"공유 플랫폼으로 도시를 설계하다"</td>
+<td>김경민 / 서울대학교 환경대학원 교수</td>
+</tr>
+<tr style="height: 40px;">
+<td>1:55 ~ 2:15(20')</td>
+<td rowspan="3">공유와 도시<br>
+"Sharing City"</td>
+<td>공유로 넥스트 도시를 그리다</td>
+<td>권난실 / CCKOREA 매니저</td>
+</tr>
+<tr style="height: 40px;">
+<td>2:20 ~ 2:40(20')</td>
+<td>데이터로 시민과 소통하다</td>
+<td>김경서 / 서울시 정보화기획단장</td>
+</tr>
+<tr style="height: 40px;">
+<td>2:45 ~ 3:05(20')</td>
+<td>공유 도시를 상상하다</td>
+<td>에어비앤비</td>
+</tr>
+<tr style="height: 40px;">
+<td style="border-top: 1px solid gray; border-bottom: 1px solid gray;">3:05 ~
+3:25(20')</td>
+<td colspan="3" style="border-top: 1px solid gray; border-bottom: 1px solid gray;">Break
+Time</td>
+</tr>
+<tr style="height: 40px;">
+<td>3:25 ~ 3:55(30')</td>
+<td>여는 강연</td>
+<td>모든 것을 연결하라</td>
+<td>윤종수</td>
+</tr>
+<tr style="height: 40px;">
+<td>4:00 ~ 4:20(20')</td>
+<td rowspan="3">공유와 사람<br>
+"Civic Hacking"</td>
+<td>나미에를 위한 420명의 기술쟁이</td>
+<td>Hal Seki / 코드포재팬</td>
+</tr>
+<tr style="height:40px;">
+<td>4:25 ~ 4:45(20')</td>
+<td>꾸준한 긱(Geek)이 세상을 바꾼다</td>
+<td>박은정 / 팀포퐁</td>
+</tr>
+<tr style="height: 40px;">
+<td>4:50 ~ 5:10(20')</td>
+<td>기술로 도시를 해킹하다</td>
+<td>장승훈 / 코드나무</td>
+</tr>
+<tr style="height: 40px;">
+<td style="border-top: 1px solid gray; border-bottom: 1px solid gray;">5:10 ~
+5:15(5')</td>
+<td colspan="3" style="border-top: 1px solid gray; border-bottom: 1px solid gray;">
+셋팅</td>
+</tr>
+<tr style="height: 40px;">
+<td>5:15 ~ 5:45(30')</td>
+<td>토크쇼</td>
+<td>대담 "공유와 협력으로 내일을 디자인하라"</td>
+<td>토론: 윤종수, 박원순</td>
+</tr>
+<tr style="height: 40px;">
+<td style="border-top: 1px solid gray; border-bottom: 1px solid gray;">5:45 ~
+6:00(15')</td>
+<td colspan="3" style="border-top: 1px solid gray; border-bottom: 1px solid gray;">
+마무리</td>
+</tr>
+</tbody>
+</table>
+        </div>
+        {% endcase %}
       </div>
       {% include footer.html %}
     </div>
 
-
-
-    {% if page.image.feature %}{% include scroll-cue.html %}{% endif %}
-
     <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
+    <script>
+      $('#masthead').addClass('fixed');
+    </script>
 
     {% if page.toc == true %}
     <script type="text/javascript">
@@ -93,29 +230,6 @@
           return $heading[0].tagName.toLowerCase();
         }
       });
-    </script>
-    {% endif %}
-
-    {% if page.image.feature %}
-    <script type="text/javascript">
-	    $("#scroll-cue").hide();
-	    // disable on touch devices
-	    if ('ontouchstart' in document.documentElement == false) {
-        $("#scroll-cue").show();
-        // remove scroll cue when content is in view
-        window.onscroll = function () {
-          var height = $(window).height();
-          var scrollTop = $(window).scrollTop();
-          var obj = $("#content")
-          var pos = obj.position();
-          if (height + scrollTop > pos.top) {
-  	        $("#scroll-cue").hide();
-          }
-          else {
-  	        $("#scroll-cue").show();
-          }
-  	    }
-      }
     </script>
     {% endif %}
 

@@ -37,6 +37,11 @@
   padding: 1em;
 }
 
+.page-lead-content.top {
+  visibility: hidden;
+  height: 600px;
+}
+
 #masthead {
   background-color: $black;
 }
@@ -70,6 +75,42 @@
     @include span-columns(6);
     @include omega(2n);
   }
+}
+
+.tile-one-third {
+  @include outer-container;
+  margin-bottom: $gutter;
+  @include media($micro) {
+    @include fill-parent;
+  }
+  @include media($small) {
+    @include span-columns(4);
+    @include omega(2n);
+  }
+  @include media($medium) {
+    @include span-columns(4);
+    @include omega(2n);
+  }
+}
+
+.tile-two-third {
+  @include outer-container;
+  margin-bottom: $gutter;
+  @include media($micro) {
+    @include fill-parent;
+  }
+  @include media($small) {
+    @include span-columns(8);
+    @include omega(2n);
+  }
+  @include media($medium) {
+    @include span-columns(8);
+    @include omega(2n);
+  }
+}
+
+.omega {
+  @include omega();
 }
 
 .profile {
@@ -138,4 +179,28 @@
   margin: 0 auto;
   padding: 4em;
   background-color: $white;
+}
+
+.fixed {
+  position:fixed;
+  top:0;
+  width: 100%;
+}
+
+.default .page-lead {
+  margin-top: 70px;
+}
+
+.map {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.site-title {
+  width: 149px;
+  height: 35px;
+  background: url('/images/logo.png');
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }

@@ -79,6 +79,14 @@
         color: $primary-color;
       }
 		}
+
+    a.active {
+      &:after {
+        width: 100%;
+      }
+      color: $primary-color;
+    }
+
 	}
 }
 

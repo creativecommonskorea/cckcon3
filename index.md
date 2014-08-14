@@ -3,14 +3,16 @@ layout: home
 permalink: /
 #title: "Welcome to CCKcon 2014"
 image:
-  feature: global.jpg
+  feature: mainbanner.jpg
 ---
 
-Now is the age of sharing.
-The whole globe is connected. Even things are connected.
+공유의 시대가 되었습니다. 
+전세계가 네트워크로 연결되고 이제 사물들까지도 서로 연결됩니다. 
 
-The power of sharing and connectivity that techology carries is making better out of the world. Here, CCKOREA International Conference invites you to have fresh inspirations from people whose efforts are bringing positive changes through technology.
+기술이 품고 있는 공유와 연결의 힘은 세상을 더 이롭게 만들고 있습니다. 
+기술로 긍정적인 변화를 만들어 내는 사람들의 생각과 경험을 공유하여 새로운 영감을 만들어내고자 합니다. 
+CC 국제 컨퍼런스가 그 자리에 함께 합니다.
 
-- Date &amp; Time : September 16 (Tues.), 10:00 AM to 6:00 PM
-- Venue : Ferrum Hall @ Ferrum Tower 3F (Junggu Suhadong, Seoul)
-- Hosted by : Creative Commons Korea
+- 일정 : 9월 16일(화) 오전 10시 ~ 오후 6시 
+- 장소 : 서울시 중구 수하동 (을지로 입구역) 페럼타워 3층 페럼홀 
+- 주최 : CC KOREA

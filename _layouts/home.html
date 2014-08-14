@@ -50,7 +50,7 @@
 
     {% if page.image.feature %}
     <div class="page-lead" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
-      <div class="wrap page-lead-content">
+      <div class="wrap page-lead-content top">
         <h1>Share Everything,<br />Connect Everything</h1>
         <h2>2014 CC korea International Conference</h2>
         <h2>16 September 2014</h2>
@@ -99,10 +99,14 @@
       <div class="resp-tabs-container">
         <div>
           <div class="wrap">
-            <ul>
-              <li>컨퍼런스 장소</li>
-            </ul>
-            <table cellpadding="0" cellspacing="0" width="536"> <tr> <td style="border:1px solid #cecece;"><a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5673453&lng=126.9838691&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=37.5670398%2C126.9838747%3AZ11%3A0.0220265%2C0.0085386&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1407983418790_-639009795" width="534" height="360" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></td> </tr></table>
+            <div class="map">
+              <h2>위치</h2>
+              <a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5673453&lng=126.9838691&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=37.5670398%2C126.9838747%3AZ11%3A0.0220265%2C0.0085386&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1407983418790_-639009795" width="534" height="360" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+              {% assign conf = site.data.conf %}
+              <h3>{{ conf.venue_title_ko }}</h3>
+              <p>{{ conf.venue_address_ko }}</p>
+              <p>{{ conf.venue_address_desc_ko }}</p>
+            </div>
           </div>
         </div>
         <div>
@@ -135,6 +139,18 @@
     <script src="{{ site.url }}/js/main.js"></script>
     <script>
       $('#demoTab').easyResponsiveTabs();
+      /**
+       * Dynamic top menu positioning
+       */
+      var num = 400; //number of pixels before modifying styles
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > num) {
+          $('#masthead').addClass('fixed');
+        } else {
+          $('#masthead').removeClass('fixed');
+        }
+      });
     </script>
 
   </body>
