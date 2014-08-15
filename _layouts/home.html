@@ -5,10 +5,10 @@
     <meta name="subject" content="2014 CC Korea 국제 컨퍼런스">
     <meta name="title" content="2014 CC Korea 국제 컨퍼런스">
     <meta name="author" content="Creative Commons Korea">
-    <meta name="keywords" content="Creative Commons Korea, Internationl Conference, Share, Connect, Creativity, Sharing City, Civic Hacking">
+    <meta name="keywords" content="Creative Commons Korea, Internationl Conference, Share, Connect, Creativity, Sharing City, Civic Hacking{% if page.tags %}, {{ page.tags | join: ', ' }} {% endif %}">
     <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
     {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
-    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+    
     {% if page.author %}
       {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
     {% endif %}
@@ -23,10 +23,6 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
-    <meta property="og:title" content="2014 CC Korea 국제 컨퍼런스" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/images/mainbanner.jpg" />
-    <link rel="image_src" href="/images/mainbanner.jpg" />
 
     <style>
     .sliding-menu-content {

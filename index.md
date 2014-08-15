@@ -1,7 +1,11 @@
 ---
 layout: home
 permalink: /
-#title: "Welcome to CCKcon 2014"
+title: "CC Korea 제 3 회 국제 컨퍼런스 2014"
+excerpt: 
+  "'모든 것을 공유하고 모든 것을 연결하라.'
+  기술로 긍정적인 변화를 만들어 내는 사람들의 생각과 경험을 공유합니다.
+  2014년 9월 16일 10~18시, 페럼홀(을지로 입구)"
 image:
   feature: mainbanner.jpg
 ---
