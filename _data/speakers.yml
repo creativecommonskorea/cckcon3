@@ -1,143 +1,184 @@
 # Speakers
 
 - name_ko: 박원순
-  name_en:
+  name_en: "Park, Won-soon"
   title_ko:
-    "서울시장<br />전 희망제작소 이사"
+    "현) 서울시장<br >
+    전) 희망제작소 이사 "
   title_en:
+    "Mayor of Seoul<br />Former Executive Director at Hope Institute"
   desc_ko:
-    "서울시는 공유도시를 선언하면서 전세계에서 선도적인 도시로 주목받고 있다.
-    공유도시의 철학적인 의미와 어떤 성과를 이뤄내고 있는지를 들어보고자 한다."
+    "서울시는 공유도시를 선언하면서 전세계적인 선도 도시로 주목받고 있다. 공유도시의 철학적 의미를 나누고, 어떤 성과를 이루어내고 있는지를 살펴본다 "
   desc_en:
+    "Since Seoul announced “Sharing City,” many eyes are on this metropolis.
+    Park will share the philosophical meaning and the achievements of “Sharing City” project."
   profile_img: wonsoon.png
 
 - name_ko: 윤종수
-  name_en:
+  name_en: Jongsoo Yoon
   title_ko:
-    "(법)세종 변호사<br />CCKOREA 프로젝트 리드, 글로벌 CC 이사"
+    "현) 법무법인 세종 변호사<br />CCKOREA 프로젝트 리드, 글로벌 CC 이사 "
   title_en:
+    "Partner at Shin & Kim<br />
+    Project Lead of Creative Commons Korea<br />
+    Member of Board of Directors of Creative Commons"
   desc_ko:
-    "10년전 CCL 한국 버젼 런칭 , 지적재산권, 인터넷거버넌스 등 정보문화운동을 오랫동안 펼쳐왔다."
+    "10년전 CCL 한국 버전을 런칭하고 , 지적재산권, 인터넷거버넌스 등 정보문화운동을 오랫동안 펼쳐왔다."
   desc_en:
+    "Yoon launched Creative Commons License in Korea 10 years ago.
+    Since then, he has participated in information sharing movement area
+    such as intellectual property right and Internet governance."
   profile_img: yoon.png
 
 - name_ko: 라이언 머클리
   name_en: Ryan Merkley
   title_ko:
-    "크리에이티브 커먼즈 대표이사<br />전 모질라재단 COO"
+    "현) 크리에이티브 커먼즈 대표이사<br />전) 모질라재단 COO"
   title_en:
-    "Creative Commons CEO<br />Ex Mozilla Foundation COO"
+    "Creative Commons CEO<br />Former CSO of Mozilla Foundation"
   desc_ko:
-    "모질라재단에서 오픈소스프로젝트를 주도적으로 진행하고 2014년 CC CEO로 합류하게 되었다.
-    열린정부, 오픈소스 등 오픈 운동을 오랫동안 펼쳐왔다."
+    "모질라재단에서 오픈소스프로젝트를 주도적으로 진행하였으며, 2014년부터 CC CEO로 합류하였다. 열린정부, 오픈소스 등 오픈 운동을 활발하게 펼쳐왔다."
   desc_en:
+    "Merkley operated multiple open source projects in Mozilla Foundation.
+    From 2014, he joined Creative Commons as CEO.
+    He has been an active enthusiast of open movement in areas
+    such as Open Government and open source."
   profile_img: ryan.png
 
 - name_ko: 할 세키
   name_en: Hal Seki
   title_ko:
-    "코드포재팬 대표<br />유샤히디 인증개발자"
+    "현) 코드포재팬 대표<br />우샤히디 인증개발자"
   title_en:
+    "Lead of Code for Japan<br />
+    Certified Developer by Ushahidi"
   desc_ko:
-    "일본에서 Civic Hacker로 활동중이다. 쓰나미와 원전사고로 폐해가 된 나미에 지역의 주민을 돕기 위해서
-    420명의 개발자가 모여서 앱,웹 서비스를 개발하는 등 다양한 프로젝트의 리더로 활동하고 있다."
+    "일본에서 Civic Hacker로 활동중이다. 쓰나미와 원전사고로 폐해가 된 나미에 지역의 주민을 돕기 위해서 420명의 개발자가 모여서 앱,웹 서비스를 개발하는 등 다양한 프로젝트의 리더로 활동하고 있다."
   desc_en:
+    "Seki is a civic hacker from Japan. He is the leader of 420 developers
+    who are creating web and mobile application services
+    for Tsunami and nuclear disaster victims."
   profile_img: hal.png
 
 - name_ko: 헬렌 한
   name_en: Helene Hahn
-  title_ko: "OKF 독일<br />코딩다빈치 프로젝트 PM"
+  title_ko: "현) 오픈 놀리지 파운데이션 독일<br />코딩다빈치 프로젝트 PM"
   title_en:
+    "Open Knowledge Foundation Germany<br />
+    Project Manager of Coding Da Vinci Project"
   desc_ko:
-    "유럽의 문화예술을 디지털화하고 공유, 활용하여 게임,
-    웹서비스 등을 만들 수 있도록 하는 코딩 다빈치 프로젝트의 PM로 일하고 있다."
+    "유럽의 문화예술작품을 디지털화하고 이를 공유하여, 게임, 웹서비스 등에 활용할 수 있게 하는 코딩 다빈치 프로젝트의 PM로 일하고 있다."
   desc_en:
+    "Hahn is working as a project manager of Coding Da Vinci project.
+    This project digitalize and share European cultural heritages,
+    so that they can be utilized as sources of derivative works such as games or web services."
   profile_img: helene.png
 
 - name_ko: 토드 포터
   name_en: Todd Porter
-  title_ko: "팹 카페 글로벌 설립자"
-  title_en:
+  title_ko: "현) 펩 까페 글로벌 설립자"
+  title_en: "Co-founder of FabCafe Global"
   desc_ko:
-    "스탠포드 비즈니스 스쿨을 졸업하고 TEDxTokyo, The Blue Economy, IMPACT Japan에서 활동하고 있다.
-    Fab Cafe를 도쿄에 처음으로 오픈하고 대만, 바로셀로나 등 전세계 Fab Cafe를 연결하여 메이커 운동을 펼치고 있다."
+    "스탠포드 비즈니스 스쿨을 졸업하고 TEDx 도쿄, 임팩트 재팬에서 활동하고 있다. 펩 까페를 도쿄에 처음으로 오픈하고 대만, 바로셀로나 등 전세계 펩 까페를 연결하여 메이커 운동을 펼치고 있다."
   desc_en:
+    "After graduated from Stanford Business School. Porter is playing an active role in TEDxTokyo, The Blue Economy, and IMPACT Japan.
+    He opened Fab Cafe in Tokyo for the first time, and is expanding Maker movement by connecting Fab Cafe network in countries like Taiwan and Spain."
   profile_img: todd.png
 
 - name_ko: 김경민
   name_en: Kyungmin Kim
-  title_ko: 서울대학교 환경대학원 교수
-  title_en:
+  title_ko: 현) 서울대학교 환경대학원 교수
+  title_en: "Professor at Seoul National University Graduate School of Environmental Studies"
   desc_ko:
-    "하버드대학교에서 박사학위 취득 후, 서울대학교 환경대학원 교수로 재직 중이다.
-    주 연구 분야는 상업용 부동산시장 분석과 어반 컴퓨팅(Urban Computing)이나,
-    현재 사회적 기업과 공유가치 활성화에 대한 관심이 높다."
+    "하버드대학교에서 박사학위 취득 후, 서울대학교 환경대학원 교수로 재직 중이다. 주 연구 분야는 상업용 부동산시장 분석과 어반 컴퓨팅(Urban Computing)이나, 현재 사회적 기업과 공유가치 활성화에 대한 관심이 높다."
   desc_en:
+    "Kim completed his Ph.D at Harvard University.
+    As a professor at Seoul National University Graduate School of Environmental Studies,
+    he studies commercial real estate market analysis and urban computing.
+    His recent interest is social entrepreneurship and activation of sharing movement."
   profile_img: min.png
 
 - name_ko: 몰리 터너
   name_en: Molly Turner
   title_ko:
-    "Airbnb 공공 정책, 대외협력 이사"
+    "현) Airbnb 정책 및 대외협력 이사<br />
+    전) 유네스코 세계 유산센터 연구원 "
   title_en:
     "Director of Public Policy and Civic Partnership,<br />
     The Sharing Economy and Its Impact on the Future of Cities"
   desc_ko:
-    "하버드대학교에서 도시 계획을 공부하고, 유네스코 세계 유산센터에서 연구원으로 할동했다.
-    SPUR와 Tumml의 이사로 활동하고 있으며, 현재 에어비앤비 정책 및 대외협력 이사로 근무하며,
-    홈쉐어링이 가져오는 환경적인 영향에 대해 연구하고 있다."
+    "하버드대학교에서 도시 계획을 공부하고, 유네스코 세계 유산센터에서 연구원으로 할동했다. SPUR와 Tumml의 이사로 활동하고 있으며, 현재 에어비앤비 정책 및 대외협력 이사로 근무하며, 홈쉐어링이 가져오는 환경적인 영향에 대해 연구하고 있다."
   desc_en:
+    "Turner studied Urban Planning at Harvard University Graduate School of Design,
+    and worked at UNESCO World Heritage Centre.
+    She is a board member of SPUR and Tumml.
+    As being in charge of Public Policy in Airbnb.
+    She now researches environmental influence of home sharing."
   profile_img: molly.png
 
-- name_ko: 한호
-  name_en: Ho Han
-  title_ko: 한국저작권위원회 유통진흥팀장
+- name_ko: 여정호
+  name_en: Jeongho Yeo
+  title_ko:
+    "현) 한국저작권위원회 저작권정보센터장<br />
+    전) 정보통신부 근무"
   title_en:
+    "번역 필요! (변경됨)"
   desc_ko:
     "2014년 7월 1일부터 국가가 보유한 공공저작물을 자유롭게 이용할 수 있게 되었다.
     이러한 공공 저작물을 함께 활용하고, 재창작하는 방법을 모색해본다."
   desc_en:
-  profile_img: han.png
+    "From July 1 of 2014, public content owned by the Government are free to use.
+    Han shares how to efficiantly utilize and reuse these contents."
+  profile_img: yeo.png
 
 - name_ko: 권난실
-  name_en:
-  title_ko: CCKOREA 공유허브 매니저
-  title_en:
+  name_en: Nanshil Kwon
+  title_ko: 현) CCKOREA 공유허브 매니저
+  title_en: Manager at Creative Commons Korea Share Hub
   desc_ko:
-    "2013년부터 공유문화 확산을 위해 서울시와 함께 공유허브 프로젝트를 진행하고 있다.
-    공유허브가 그리는 미래의 도시 모습은 어떠할지 함께 이야기해본다."
+    "2013년부터 공유문화 확산을 위해 서울시와 함께 공유허브 프로젝트를 진행하고 있다. 공유허브가 그리는 미래의 도시 모습은 어떠할지 함께 이야기해본다."
   desc_en:
+    "Kwon is serving as a Manager of Share Hub project that Creative Commons Korea partners
+     with Seoul city government to promote sharing culture since 2013.
+     Her presentation will cover what the future picture of cities will look according to Share Hub."
   profile_img: kwon.png
 
 - name_ko: 김경서
-  name_en:
-  title_ko: 서울시 정보기획단장
-  title_en:
+  name_en: Kyungseo Kim
+  title_ko:
+    "현) 서울시 정보기획단장
+    전) 다음소프트 창립자"
+  title_en: General Director at Information System Planning of Seoul
   desc_ko:
-    "'시민의 작은(Small) 고충까지도 해결하는 큰(Big) 데이터'라는 슬로건과 함께,
-    공공분야에서 생산되는 수많은 데이터와 민간데이터를 융합해 서울 시민의 일상을 바꾸고 있다.
-    빅데이터를 활용한 심야버스 정책, 지역별 상권분석 플랫폼 등 다양한 사례를 나눠본다."
+    "'시민의 작은(Small) 고충까지도 해결하는 큰(Big) 데이터'라는 슬로건과 함께, 공공분야에서 생산되는 수많은 데이터와 민간데이터를 융합해 서울 시민의 일상을 바꾸고 있다. 빅데이터를 활용한 심야버스 정책, 지역별 상권분석 플랫폼 등 다양한 사례를 나눠본다."
   desc_en:
+    "Under the slogan “Big Data that solves even small citizen complaint,”
+    Kim and his team are changing Seoul citizens’ everyday life
+    by combining and applying public and private data.
+    Hear the cases of overnight bus policiy and market research platform for local enterprises."
   profile_img: seo.png
 
 - name_ko: 장승훈
-  name_en:
-  title_ko: 코드나무 활동가
-  title_en:
+  name_en: Seung-hun Jang
+  title_ko: 현) 코드나무 활동가
+  title_en: Codenamu Activist
   desc_ko:
-    "자발적인 시민들로 구성되어 기술로 보다 나은 사회를 만들기 위해 시작된 커뮤니티, 코드나무의 활동가이다.
-    코드포서울을 운영하고 있으며 국내에 시빅해킹 문화를 확산시키고자 노력하고 있다."
+    "자발적인 시민들이 주축이 되어 기술로 보다 나은 사회를 만들기 위해 시작된 커뮤니티, '코드나무'의 활동가이다. 코드포서울을 운영하고 있으며 국내에 Civic Hacking 문화를 확산시키고자 노력하고 있다."
   desc_en:
+    "Jang is an activist of Codenamu, a community of citizens who want to use technology for social causes.
+    He runs Code for Seoul project, and is making efforts to spread civic hacking culture in Korea."
   profile_img: chunsik.png
 
 - name_ko: 민세희
-  name_en:
-  title_ko: 랜덤웍스
-  title_en:
+  name_en: Sey Min
+  title_ko: 현) 랜덤웍스
+  title_en: Randomwalks
   desc_ko:
-    "데이터를 가지고 다양한 시각화 프로젝트를 진행하는 랜덤웍스에서 디자인과 프로그래밍을 담당하고 있다.
-    최근에는 서울시의 일자별 지출 정보 (사업과 지출액) 중 가장 최근에 지출된 내용을 실시간으로 시각화하며
-    지난 100일간의 지출정보 데이터로 만들어진 지형도를 선보였다.
-    데이터를 어떻게 예술로 승화하였는지 이야기를 들어보고자 한다."
+    "데이터를 가지고 다양한 시각화 프로젝트를 진행하는 랜덤웍스에서 디자인과 프로그래밍을 담당하고 있다. 최근에는 지난 100일간 서울시의 지출 데이터로 만든 지형도 시각화 작품을 만들었다. 데이터를 어떻게 예술로 승화하였는지 이야기를 들어보고자 한다."
   desc_en:
+    "Min is in charge of design and programming at Randomwalks
+    that magages various data visualization projects.
+    Her most recent work is data contour map of Seoul city’s last 100 days of spending,
+     accumulated from everyday real time information from Seoul’s Open Data.
+      She will tell how she turns data into pieces of art."
   profile_img: seymin.png

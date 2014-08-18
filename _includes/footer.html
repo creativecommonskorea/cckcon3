@@ -5,7 +5,7 @@
       <li class="clearfix"><a href="http://cckorea.org" class="cck">CC Korea</a></li>
     </ul>
 		<ul class="menu-item clearfix"></li>
-			<li><h6> 골드 후원</h6></li>
+			<li><h6>골드 후원</h6></li>
 		{% for sponsor in site.data.sponsors %}
       {% if sponsor.url contains 'http' %}
         {% assign domain = '' %}
@@ -18,7 +18,7 @@
 		{% endfor %}
 		</ul>
     <ul class="menu-item"></li>
-      <li><h6> 실버 후원</h6></li>
+      <li><h6>실버 후원</h6></li>
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.url contains 'http' %}
         {% assign domain = '' %}

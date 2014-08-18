@@ -294,7 +294,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
   }
-  .copyright-cm {
+  .Commision {
     width: 159px;
     height: 35px;
     background: url('/images/copyright.png');
@@ -375,4 +375,8 @@ body {
 .default #page-wrapper {
   padding-bottom: 5em;
   border-bottom: 1px solid #ccc;
+}
+
+a.lang {
+  font-size: 0.5em;
 }

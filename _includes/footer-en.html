@@ -1,0 +1,37 @@
+<footer role="contentinfo" id="site-footer">
+	<nav role="navigation" class="menu bottom-menu">
+    <ul class="menu-item clearfix">
+      <li><h6>Hosted by</h6></li>
+      <li class="clearfix"><a href="http://cckorea.org" class="cck">CC Korea</a></li>
+    </ul>
+		<ul class="menu-item clearfix"></li>
+			<li><h6>Gold sponsors</h6></li>
+		{% for sponsor in site.data.sponsors %}
+      {% if sponsor.url contains 'http' %}
+        {% assign domain = '' %}
+        {% else %}
+        {% assign domain = site.url %}
+      {% endif %}
+      {% if sponsor.level == 'gold' %}
+			<li><a class="{{ sponsor.title_en }}" href="{{ domain }}{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_en }}</a></li>
+      {% endif %}
+		{% endfor %}
+		</ul>
+    <ul class="menu-item"></li>
+      <li><h6>Silver sponsors</h6></li>
+    {% for sponsor in site.data.sponsors %}
+      {% if sponsor.url contains 'http' %}
+        {% assign domain = '' %}
+        {% else %}
+        {% assign domain = site.url %}
+      {% endif %}
+      {% if sponsor.level == 'silver' %}
+      <li><a class="{{ sponsor.title_en }}" href="{{ domain }}{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_en }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+	</nav><!-- /.bottom-menu -->
+	<p class="copyright">{{ site.time | date: '%Y' }} Creative Commons Korea. Some Rights Reserved.<br />Except where otherwise noted, content on this site is licensed under a <a href="http://creativecommons.org/licences/by/2.0/kr" target="_blank">Creative Commons Attribution 2.0 License.</a></p>
+  <a class="license" rel="license" href="http://creativecommons.org/licenses/by/2.0/kr/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/2.0/kr/88x31.png" /></a>
+
+</footer>

@@ -1,21 +1,21 @@
 # Site navigation links
 
-- title: about
+- title: About
   url: /
   excerpt: about CCKcon 2014
   # image: 400x250.gif
 
-- title: schedule
+- title: Schedule
   url: /schedule/
   excerpt: Time table of programs
   # image: 400x250.gif
 
-- title: speakers
+- title: Speakers
   url: /speakers/
   excerpt: Speakers of sessions
   # image: 400x250.gif
 
-- title: sponsors
+- title: Sponsors
   url: /sponsors/
   excerpt: Sponsors of CCKcon 2014
   # image: 400x250.gif
