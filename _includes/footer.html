@@ -7,6 +7,11 @@
 		<ul class="menu-item clearfix"></li>
 			<li><h6> 골드 후원</h6></li>
 		{% for sponsor in site.data.sponsors %}
+      {% if sponsor.url contains 'http' %}
+        {% assign domain = '' %}
+        {% else %}
+        {% assign domain = site.url %}
+      {% endif %}
       {% if sponsor.level == 'gold' %}
 			<li><a class="{{ sponsor.title_en }}" href="{{ domain }}{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
@@ -15,6 +20,11 @@
     <ul class="menu-item"></li>
       <li><h6> 실버 후원</h6></li>
     {% for sponsor in site.data.sponsors %}
+      {% if sponsor.url contains 'http' %}
+        {% assign domain = '' %}
+        {% else %}
+        {% assign domain = site.url %}
+      {% endif %}
       {% if sponsor.level == 'silver' %}
       <li><a class="{{ sponsor.title_en }}" href="{{ domain }}{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
