@@ -4,7 +4,7 @@
       <li><h6>Hosted by</h6></li>
       <li class="clearfix"><a href="http://cckorea.org" class="cck">CC Korea</a></li>
     </ul>
-		<ul class="menu-item clearfix"></li>
+		<ul class="menu-item clearfix">
 			<li><h6>Gold sponsors</h6></li>
 		{% for sponsor in site.data.sponsors %}
       {% if sponsor.url contains 'http' %}
@@ -17,7 +17,7 @@
       {% endif %}
 		{% endfor %}
 		</ul>
-    <ul class="menu-item"></li>
+    <ul class="menu-item clearfix">
       <li><h6>Silver sponsors</h6></li>
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.url contains 'http' %}
@@ -29,6 +29,10 @@
       <li><a class="{{ sponsor.title_en }}" href="{{ domain }}{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_en }}</a></li>
       {% endif %}
     {% endfor %}
+    </ul>
+    <ul class="menu-item clearfix">
+      <li class="clearfix"><h6>Partner</h6></li>
+      <li><a href="http://english.sharehub.kr" target="_blank"><img src="{{ site.url }}/images/sharehub.png" alt=""></a></li>
     </ul>
 	</nav><!-- /.bottom-menu -->
 	<p class="copyright">{{ site.time | date: '%Y' }} Creative Commons Korea. Some Rights Reserved.<br />Except where otherwise noted, content on this site is licensed under a <a href="http://creativecommons.org/licences/by/2.0/kr" target="_blank">Creative Commons Attribution 2.0 License.</a></p>
