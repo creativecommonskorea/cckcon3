@@ -323,8 +323,24 @@ body {
   th {
     background-color: #ccc;
   }
-  tr {
-    padding: 10px 0;
+  td {
+    padding: 15px;
+
+  }
+  .time {
+    width: 20%;
+  }
+  .session {
+    width: 20%;
+  }
+  .title {
+    width: 30%;
+  }
+  .speaker {
+    width: 30%;
+  }
+  .sep {
+    border-bottom: 2px solid #000;
   }
 }
 
@@ -338,4 +354,9 @@ body {
   @include media($medium) {
     visibility: hidden;
   }
+}
+
+.default #page-wrapper {
+  padding-bottom: 5em;
+  border-bottom: 1px solid #ccc;
 }
