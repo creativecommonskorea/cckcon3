@@ -327,3 +327,15 @@ body {
     padding: 10px 0;
   }
 }
+
+.sliding-menu-button {
+  @include media($micro) {
+    visibility: visible;
+  }
+  @include media($small) {
+    visibility: visible;
+  }
+  @include media($medium) {
+    visibility: hidden;
+  }
+}
