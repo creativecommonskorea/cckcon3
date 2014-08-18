@@ -210,9 +210,10 @@ body {
 }
 
 .site-title {
-  width: 149px;
+  width: 206px;
   height: 35px;
-  background: url('/images/logo.png');
+  background: url('/images/cck-logo.png');
+  background-size: 206px 35px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -233,13 +234,46 @@ body {
     font-size: 12px;
     font-size: 0.75rem;
     line-height: 2;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
-    margin-right: 2em;
     color: #999;
-    margin-top: 1.3em;
+    margin: 0 3em 0 0;
+    padding: 0;
   }
-  li a {
+  .menu-item {
+    margin-bottom: 1em;
+  }
+  .menu li a {
     color: #999;
+    margin: 0;
+    padding: 0;
+  }
+  .cck {
+    width: 206px;
+    height: 35px;
+    background: url('/images/cck-logo-b.png');
+    background-size: 206px 35px;
+    text-indent: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .copyright-cm {
+    width: 159px;
+    height: 35px;
+    background: url('/images/copyright.png');
+    background-size: 159px 35px;
+    text-indent: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .airbnb {
+    width: 62px;
+    height: 35px;
+    background: url('/images/airbnb.png');
+    background-size: 62px 35px;
+    text-indent: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
