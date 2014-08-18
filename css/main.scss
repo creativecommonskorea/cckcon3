@@ -35,10 +35,14 @@ body {
 
 .page-lead {
   padding: 1em 0;
+  @include media($micro) {
+    background-size: 200%;
+  }
 }
 
 .page-lead-content {
   padding: 1em;
+  font-size: 1em;
   .content {
     text-align: center;
     ul {
@@ -48,12 +52,18 @@ body {
     li {
       list-style: none;
     }
+    p {
+      font-size: 0.95em;
+    }
   }
 }
 
 .page-lead-content.top {
   visibility: hidden;
   height: 600px;
+  @include media($micro) {
+    height: 240px;
+  }
 }
 
 .page-lead-content.hidden {
@@ -77,6 +87,9 @@ body {
   .content {
     width: 60%;
     margin: 0 auto;
+    @include media($micro) {
+      width: 100%;
+    }
   }
 }
 
@@ -87,7 +100,8 @@ body {
     @include fill-parent;
   }
   @include media($small) {
-    @include span-columns(6);
+    @include fill-parent;
+    // @include span-columns(12);
     @include omega(2n);
   }
   @include media($medium) {
@@ -132,10 +146,22 @@ body {
   @include omega();
 }
 
+.profile-img {
+  float: left;
+  border-radius: 50%;
+  @include media($micro) {
+    margin: 0 0 20px 20px;
+  }
+}
+
 .profile {
   margin-top: 0;
   padding-left: 25px;
   overflow: hidden;
+  @include media($micro) {
+    width: 95%;
+    padding-right: 0.5em;
+  }
   li {
     list-style: none;
   }
@@ -146,10 +172,7 @@ body {
   }
 }
 
-.profile-img {
-  float: left;
-  border-radius: 50%;
-}
+
 
 .clearfix:after {
   content: "";
@@ -191,6 +214,7 @@ body {
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 20px;
   background-color: $white;
+  padding-left: 1em;
 }
 
 .card {
@@ -212,6 +236,10 @@ body {
 
 .default .page-lead {
   margin-top: 70px;
+  @include media($small) {
+    background-size: 200%;
+
+  }
 }
 
 .map {
@@ -294,5 +322,8 @@ body {
   }
   th {
     background-color: #ccc;
+  }
+  tr {
+    padding: 10px 0;
   }
 }
