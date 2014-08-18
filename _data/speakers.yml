@@ -1,7 +1,7 @@
 # Speakers
 
 - name_ko: 박원순
-  name_en: "Park, Won-soon"
+  name_en: "Wonsoon Park"
   title_ko:
     "현) 서울시장<br >
     전) 희망제작소 이사 "
@@ -104,8 +104,7 @@
     "현) Airbnb 정책 및 대외협력 이사<br />
     전) 유네스코 세계 유산센터 연구원 "
   title_en:
-    "Director of Public Policy and Civic Partnership,<br />
-    The Sharing Economy and Its Impact on the Future of Cities"
+    "Director of Public Policy and Civic Partnership"
   desc_ko:
     "하버드대학교에서 도시 계획을 공부하고, 유네스코 세계 유산센터에서 연구원으로 할동했다. SPUR와 Tumml의 이사로 활동하고 있으며, 현재 에어비앤비 정책 및 대외협력 이사로 근무하며, 홈쉐어링이 가져오는 환경적인 영향에 대해 연구하고 있다."
   desc_en:
@@ -122,7 +121,7 @@
     "현) 한국저작권위원회 저작권정보센터장<br />
     전) 정보통신부 근무"
   title_en:
-    "번역 필요! (변경됨)"
+    "Lead of Korea Copyright Commission Copyright Technology Center"
   desc_ko:
     "2014년 7월 1일부터 국가가 보유한 공공저작물을 자유롭게 이용할 수 있게 되었다.
     이러한 공공 저작물을 함께 활용하고, 재창작하는 방법을 모색해본다."
@@ -146,7 +145,7 @@
 - name_ko: 김경서
   name_en: Kyungseo Kim
   title_ko:
-    "현) 서울시 정보기획단장
+    "현) 서울시 정보기획단장<br />
     전) 다음소프트 창립자"
   title_en: General Director at Information System Planning of Seoul
   desc_ko:
@@ -159,7 +158,7 @@
   profile_img: seo.png
 
 - name_ko: 장승훈
-  name_en: Seung-hun Jang
+  name_en: Seunghun Jang
   title_ko: 현) 코드나무 활동가
   title_en: Codenamu Activist
   desc_ko:

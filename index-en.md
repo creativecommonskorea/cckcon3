@@ -7,7 +7,7 @@ excerpt:
   Share fresh inspirations from people whose efforts are bringing positive changes through technology.
   16 SEP 2014, Ferrum Hall @ Seoul, South Korea"
 image:
-  feature: mainbanner.jpg
+  feature: mainbanner-en.jpg
 ---
 
 Now is the age of sharing.
