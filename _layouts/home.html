@@ -87,7 +87,7 @@
 
     <div class="speaker-content wrap clearfix">
       <div class="tiles">
-      {% for speaker in site.data.speakers limit:6 %}
+      {% for speaker in site.data.speakers limit:8 %}
         {% include speaker.html %}
       {% endfor %}
       </div><!-- /.tiles -->
@@ -96,16 +96,20 @@
     <div id="demoTab">
       <div class="wrap">
         <ul class="resp-tabs-list">
+          <li><h3>컨퍼런스 장소</h3></li>
+          <li><h3>언론 보도</h3></li>
+          <li><h3>후원 문의</h3></li>
+          <!--
           <li><h3>Venue</h3></li>
           <li><h3>Press Release</h3></li>
           <li><h3>Sponsors</h3></li>
+           -->
         </ul>
       </div>
       <div class="resp-tabs-container">
         <div>
           <div class="wrap">
             <div class="map card">
-              <h2>위치</h2>
               <a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5673453&lng=126.9838691&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=37.5670398%2C126.9838747%3AZ11%3A0.0220265%2C0.0085386&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1407983418790_-639009795" width="534" height="360" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
               {% assign conf = site.data.conf %}
               <h3>{{ conf.venue_title_ko }}</h3>

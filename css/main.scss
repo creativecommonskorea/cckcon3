@@ -270,7 +270,7 @@ body {
 #site-footer {
   h6 {
     font-size: 12px;
-    font-size: 0.75rem;
+    font-size: 1rem;
     line-height: 2;
     color: #999;
     margin: 0 3em 0 0;
@@ -314,6 +314,16 @@ body {
     white-space: nowrap;
     overflow: hidden;
   }
+  .copyright, .license {
+    float: left;
+  }
+  .license {
+    margin-left: 2em;
+  }
+  .menu li a:active::after, .menu li a:hover::after {
+    width: auto;
+  }
+
 }
 
 .schedule {
@@ -335,6 +345,7 @@ body {
   }
   .title {
     width: 30%;
+    font-weight: bold;
   }
   .speaker {
     width: 30%;

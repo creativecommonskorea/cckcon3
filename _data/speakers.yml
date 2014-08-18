@@ -14,7 +14,7 @@
 - name_ko: 윤종수
   name_en:
   title_ko:
-    "(법)세종 변호사<br />CCKOREA 대표, 글로벌 CC 이사"
+    "(법)세종 변호사<br />CCKOREA 프로젝트 리드, 글로벌 CC 이사"
   title_en:
   desc_ko:
     "10년전 CCL 한국 버젼 런칭 , 지적재산권, 인터넷거버넌스 등 정보문화운동을 오랫동안 펼쳐왔다."
@@ -33,10 +33,10 @@
   desc_en:
   profile_img: ryan.png
 
-- name_ko: Hal Seki
+- name_ko: 할 세키
   name_en: Hal Seki
   title_ko:
-    "Code for Japan 대표<br />Ushahidi 인증개발자"
+    "코드포재팬 대표<br />유샤히디 인증개발자"
   title_en:
   desc_ko:
     "일본에서 Civic Hacker로 활동중이다. 쓰나미와 원전사고로 폐해가 된 나미에 지역의 주민을 돕기 위해서
@@ -44,7 +44,7 @@
   desc_en:
   profile_img: hal.png
 
-- name_ko: Helene Hahn
+- name_ko: 헬렌 한
   name_en: Helene Hahn
   title_ko: "OKF 독일<br />코딩다빈치 프로젝트 PM"
   title_en:
@@ -54,9 +54,9 @@
   desc_en:
   profile_img: helene.png
 
-- name_ko: Todd Porter
+- name_ko: 토드 포터
   name_en: Todd Porter
-  title_ko: "Fab Cafe Global 설립자"
+  title_ko: "팹 카페 글로벌 설립자"
   title_en:
   desc_ko:
     "스탠포드 비즈니스 스쿨을 졸업하고 TEDxTokyo, The Blue Economy, IMPACT Japan에서 활동하고 있다.
@@ -75,9 +75,10 @@
   desc_en:
   profile_img: min.png
 
-- name_ko: Molly Turner
+- name_ko: 몰리 터너
   name_en: Molly Turner
-  title_ko: Airbnb 정책 및 대외협력 이사
+  title_ko:
+    "Airbnb 공공 정책, 대외협력 이사"
   title_en:
     "Director of Public Policy and Civic Partnership,<br />
     The Sharing Economy and Its Impact on the Future of Cities"
@@ -131,7 +132,7 @@
 
 - name_ko: 민세희
   name_en:
-  title_ko: 랜덤웍스(Randomwalks)
+  title_ko: 랜덤웍스
   title_en:
   desc_ko:
     "데이터를 가지고 다양한 시각화 프로젝트를 진행하는 랜덤웍스에서 디자인과 프로그래밍을 담당하고 있다.
