@@ -65,7 +65,7 @@
   title_ko: "현) 오픈 놀리지 파운데이션 독일<br />코딩다빈치 프로젝트 PM"
   title_en:
     "Open Knowledge Foundation Germany<br />
-    Project Manager of Coding Da Vinci Project"
+    Project Manager of <em>Coding Da Vinci</em> Project"
   desc_ko:
     "유럽의 문화예술작품을 디지털화하고 이를 공유하여, 게임, 웹서비스 등에 활용할 수 있게 하는 코딩 다빈치 프로젝트의 PM로 일하고 있다."
   desc_en:
@@ -81,7 +81,7 @@
   desc_ko:
     "스탠포드 비즈니스 스쿨을 졸업하고 TEDx 도쿄, 임팩트 재팬에서 활동하고 있다. 펩 까페를 도쿄에 처음으로 오픈하고 대만, 바로셀로나 등 전세계 펩 까페를 연결하여 메이커 운동을 펼치고 있다."
   desc_en:
-    "After graduated from Stanford Business School. Porter is playing an active role in TEDxTokyo, The Blue Economy, and IMPACT Japan.
+    "After graduated from Stanford Business School, Porter is playing an active role in TEDxTokyo, The Blue Economy, and IMPACT Japan.
     He opened Fab Cafe in Tokyo for the first time, and is expanding Maker movement by connecting Fab Cafe network in countries like Taiwan and Spain."
   profile_img: todd.png
 
@@ -104,14 +104,14 @@
     "현) Airbnb 정책 및 대외협력 이사<br />
     전) 유네스코 세계 유산센터 연구원 "
   title_en:
-    "Director of Public Policy and Civic Partnership"
+    "Director of Public Policy and Civic Partnership Airbnb"
   desc_ko:
     "하버드대학교에서 도시 계획을 공부하고, 유네스코 세계 유산센터에서 연구원으로 할동했다. SPUR와 Tumml의 이사로 활동하고 있으며, 현재 에어비앤비 정책 및 대외협력 이사로 근무하며, 홈쉐어링이 가져오는 환경적인 영향에 대해 연구하고 있다."
   desc_en:
     "Turner studied Urban Planning at Harvard University Graduate School of Design,
     and worked at UNESCO World Heritage Centre.
     She is a board member of SPUR and Tumml.
-    As being in charge of Public Policy in Airbnb.
+    As being in charge of Public Policy in Airbnb,
     She now researches environmental influence of home sharing."
   profile_img: molly.png
 
@@ -172,8 +172,12 @@
 
 - name_ko: 민세희
   name_en: Sey Min
-  title_ko: 현) 랜덤웍스 대표
-  title_en: Randomwalks
+  title_ko:
+    "현) 랜덤웍스 대표<br />
+    전) 2012 TED 펠로우"
+  title_en:
+    "Randomwalks<br />
+    Former 2012 TED fellow"
   desc_ko:
     "데이터를 가지고 다양한 시각화 프로젝트를 진행하는 랜덤웍스에서 디자인과 프로그래밍을 담당하고 있다. 최근에는 지난 100일간 서울시의 지출 데이터로 만든 지형도 시각화 작품을 만들었다. 데이터를 어떻게 예술로 승화하였는지 이야기를 들어보고자 한다."
   desc_en:
