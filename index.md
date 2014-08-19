@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: /
-title: "CC Korea 제 3 회 국제 컨퍼런스 2014"
+title: "환영합니다!"
 excerpt: 
   "'모든 것을 공유하고 모든 것을 연결하라.'
   기술로 긍정적인 변화를 만들어 내는 사람들의 생각과 경험을 공유합니다.

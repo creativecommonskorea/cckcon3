@@ -1,7 +1,7 @@
 ---
 layout: home-en
 permalink: /en/
-title: "2014 CC Korea International Conference"
+title: "About"
 excerpt: 
   "“Share Everything, Connect Everything”
   Share fresh inspirations from people whose efforts are bringing positive changes through technology.
