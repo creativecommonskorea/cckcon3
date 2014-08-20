@@ -1,37 +1,35 @@
 <footer role="contentinfo" id="site-footer">
 	<nav role="navigation" class="menu bottom-menu">
     <ul class="menu-item clearfix">
-      <li><h6>Hosted by</h6></li>
-      <li class="clearfix"><a href="http://cckorea.org" class="cck">CC Korea</a></li>
+      <li class="heading"><h6>Hosted by</h6></li>
+      <li class="item-cck"><a href="http://cckorea.org" class="cck logo">CC Korea</a></li>
     </ul>
-		<ul class="menu-item clearfix">
+		<ul class="menu-item gold clearfix">
 			<li><h6>Gold sponsor</h6></li>
 		{% for sponsor in site.data.sponsors %}
-      {% if sponsor.url contains 'http' %}
-        {% assign domain = '' %}
-        {% else %}
-        {% assign domain = site.url %}
-      {% endif %}
       {% if sponsor.level == 'gold' %}
-			<li><a class="{{ sponsor.title_en }}" href="{{ domain }}{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_en }}</a></li>
+      <li class="item-{{ sponsor.title_en }}"><a class="{{ sponsor.title_en }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_en }}</a></li>
       {% endif %}
-		{% endfor %}
+    {% endfor %}
 		</ul>
-    <ul class="menu-item clearfix">
-      <li><h6>Silver sponsor</h6></li>
+    <ul class="menu-item silver clearfix">
+      <li><h6>Silver sponsors</h6></li>
     {% for sponsor in site.data.sponsors %}
-      {% if sponsor.url contains 'http' %}
-        {% assign domain = '' %}
-        {% else %}
-        {% assign domain = site.url %}
-      {% endif %}
       {% if sponsor.level == 'silver' %}
-      <li><a class="{{ sponsor.title_en | downcase }}" href="{{ domain }}{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_en }}</a></li>
+      <li class="item-{{ sponsor.title_en | downcase }}"><a class="{{ sponsor.title_en | downcase }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_en }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
-    <ul class="menu-item clearfix">
-      <li class="clearfix"><h6>Partner</h6></li>
+    <!-- <ul class="menu-item bronze clearfix">
+      <li class="heading"><h6>Bronze sponsor</h6></li>
+    {% for sponsor in site.data.sponsors %}
+      {% if sponsor.level == 'bronze' %}
+      <li class="item-{{ sponsor.title_en | downcase }}"><a class="{{ sponsor.title_en | downcase }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_en }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul> -->
+    <ul class="menu-item partner clearfix">
+      <li class="heading"><h6>Partner</h6></li>
       <li><a href="http://english.sharehub.kr" target="_blank"><img src="{{ site.url }}/images/sharehub.png" alt=""></a></li>
     </ul>
 	</nav><!-- /.bottom-menu -->

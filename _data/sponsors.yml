@@ -21,3 +21,15 @@
   level: silver
   logo_img: airbnb.png
   url: http://airbnb.com
+
+- title_ko: 네이버
+  title_en: NAVER
+  desc_ko:
+    "네이버 주식회사는 검색 포털 네이버 (www.naver.com), 어린이 전용 포털 쥬니어네이버 (jr.naver.com), 온라인 기부 포털 해피빈 (happybean.naver.com)을 운영하고 있는 인터넷 전문 기업입니다. 네이버㈜는 검색을 주축으로 다양한 서비스를 꾸준히 선보이고 있으며 자회사 ‘라인주식회사’의 모바일 메신저 서비스 ‘라인’으로 글로벌 비즈니스 기반도 확보하고 있습니다."
+  desc_en:
+    "NAVER Corporation is Korea’s premier Internet company, operating the nation’s top search portal “Naver” (www.naver.com), Korea’s first online children’s portal “Jr. Naver” (jr.naver.com), and the nation’s first online donation portal “Happybean” (happybean.naver.com).
+    With search as the company’s core business, NAVER Corporation is pioneering the digital way of life by continuously rolling out innovative and convenient services."
+  level: silver
+  logo_img: naver.png
+  url: http://www.navercorp.com
+

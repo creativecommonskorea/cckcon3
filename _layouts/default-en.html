@@ -82,9 +82,11 @@
             {% include speaker-en.html %}
           {% endfor %}
         {% when '/en/sponsors/' %}
-          {% for sponsor in site.data.sponsors | group_by:"level" %}
+          {% assign levels =  site.data.sponsors | group_by:"level" %}
+          {% for level in levels %}
             {% include sponsor-en.html %}
           {% endfor %}
+
         {% else %}
         <div class="schedule">
           <table>

@@ -220,6 +220,12 @@ body {
   padding-left: 1em;
 }
 
+.sponsor-level h3 {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+  background-color: $white;
+}
+
 .card {
   min-width: 60%;
   margin: 0 auto;
@@ -288,35 +294,36 @@ body {
     margin: 0;
     padding: 0;
   }
+  .logo {
+    text-indent: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 20px;
+  }
   .cck {
     width: 206px;
     height: 35px;
     background: url('/images/cck-logo-b.png');
     background-size: 206px 35px;
-    text-indent: 100%;
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
   }
   .Commision {
     width: 176px;
     height: 40px;
     background: url('/images/copyright.png');
     background-size: 176px 40px;
-    text-indent: 100%;
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
   }
   .airbnb {
     width: 128px;
     height: 40px;
     background: url('/images/airbnb.png');
     background-size: 128px 40px;
-    text-indent: 100%;
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
+  }
+  .naver {
+    width: 108px;
+    height: 40px;
+    background: url('/images/naver.png');
+    background-size: 108px 40px;
   }
   .copyright, .license {
     float: left;
@@ -326,6 +333,9 @@ body {
   }
   .menu li a:active::after, .menu li a:hover::after {
     width: auto;
+  }
+  .item-naver {
+    margin-left: 20px;
   }
 
 }

@@ -83,7 +83,8 @@
             {% include speaker.html %}
           {% endfor %}
         {% when '/sponsors/' %}
-          {% for sponsor in site.data.sponsors | group_by:"level" %}
+          {% assign levels =  site.data.sponsors | group_by:"level" %}
+          {% for level in levels %}
             {% include sponsor.html %}
           {% endfor %}
         {% else %}

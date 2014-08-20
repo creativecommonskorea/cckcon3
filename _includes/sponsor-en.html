@@ -1,18 +1,20 @@
-  <hr style="visibility: hidden;" />
+<div class="sponsor-level clearfix">
 
-  <div class="speaker-header clearfix">
-    <div class="wrap"><h3 class="{{ sponsor.level }}">{{ sponsor.level | upcase }}</h3></div>
+  <div class="wrap"><h3 class="{{ level.name | downcase }}">{{ level.name | upcase }}</h3></div>
+
+  {% for sponsor in level.items %}
+  <div class="sponsor">
+    <div class="tile-one-third">
+      <a href="{{ sponsor.url }}" target="_blank"><img src="{{ site.url }}/images/{{ sponsor.logo_img }}" alt="{{ sponsor.title_ko }}" class="logo-img" /></a>
+    </div>
+
+    <div class="tile-two-third">
+      <ul class="profile">
+        <li class="sponsor-title">{{ sponsor.title_en }}</li>
+        <li class="sponsor-desc">{{ sponsor.desc_en }}</li>
+      </ul>
+    </div>
   </div>
+  {% endfor %}
 
-  <div class="tile-one-third">
-    <a href="{{ sponsor.url }}" target="_blank"><img src="{{ site.url }}/images/{{ sponsor.logo_img }}" alt="{{ sponsor.title_en }}" class="logo-img" /></a>
-  </div>
-
-  <div class="tile-two-third">
-    <ul class="profile">
-      <li class="sponsor-title">{{ sponsor.title_en }}</li>
-      <li class="sponsor-desc">{{ sponsor.desc_en }}</li>
-    </ul>
-  </div>
-
-
+</div>
