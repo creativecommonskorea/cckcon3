@@ -28,6 +28,14 @@
       {% endif %}
     {% endfor %}
     </ul>
+    <ul class="menu-item media clearfix">
+      <li class="heading"><h6>미디어 후원</h6></li>
+    {% for sponsor in site.data.sponsors %}
+      {% if sponsor.level == 'media' %}
+      <li class="item-{{ sponsor.title_en | downcase }}"><a class="bloter logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
     <ul class="menu-item partner clearfix">
       <li class="heading"><h6>파트너</h6></li>
       <li class="item-{{ sponsor.title_en | downcase }}"><a href="http://sharehub.kr" target="_blank"><img src="{{ site.url }}/images/sharehub.png" alt=""></a></li>
