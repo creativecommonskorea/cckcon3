@@ -33,3 +33,12 @@
   logo_img: naver.png
   url: http://www.navercorp.com
 
+- title_ko: 청년허브
+  title_en: Youth Hub
+  desc_ko:
+    "청년이 동료를 만나 서로 협력하고 즐겁게 일하는 사회를 만드는 것, 청년허브의 미션입니다. 스스로 움직이는 청년들이 필요로 하는 것을 파악하고 서로 접점을 만들어 나가며 자원을 연결하려 합니다. 청년문제에서 출발하지만 청년을 통해 생명력 넘치는 사회가 만들어지길 청년허브는 꿈꿉니다."
+  desc_en:
+    "Youth Hub is the platform for youths’ jobs, lives, and activities! The Youth Hub wants to be the place on which youths trying to resolve the problems can lean. We will be the pillar of hope for youths who have interest in something for a better life and society."
+  level: bronze
+  logo_img: youthhub.png
+  url: http://youthhub.kr
