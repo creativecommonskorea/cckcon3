@@ -4,11 +4,11 @@
       {% unless link.url contains 'http' %}
         {% assign domain = site.url %}
       {% endunless %}
-			{% if link.image %}<a href="{{ domain }}{{ link.url }}"><img src="{{ site.url }}/images/{{ link.image }}" alt="teaser" class="teaser"></a>{% endif %}
-			<a href="{{ domain }}{{ link.url }}" class="title">{{ link.title }}</a>
+			{% if link.image %}<a href="{{ domain }}/en{{ link.url }}"><img src="{{ site.url }}/images/{{ link.image }}" alt="teaser" class="teaser"></a>{% endif %}
+			<a href="{{ domain }}/en{{ link.url }}" class="title">{{ link.title }}</a>
 			{% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
 		</li>{% endfor %}
-    <li><a target="_blank" href="{{ site.data.conf.register_url }}" class="btn register">Register</a></li>
+    <li><a target="_blank" href="{{ site.data.conf.register_url_en }}" class="btn register">Register</a></li>
     <li><a class="selector" href="/">한국어</a></li>
 	</ul>
 </nav>
