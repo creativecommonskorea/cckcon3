@@ -16,3 +16,9 @@ wf.async = 'true';
 var s = document.getElementsByTagName('script')[0];
 s.parentNode.insertBefore(wf, s);
 })();
+
+$('a').on('click touchend', function(e) {
+    var el = $(this);
+    var link = el.attr('href');
+    window.location = link;
+});
