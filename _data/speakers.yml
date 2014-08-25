@@ -140,20 +140,20 @@
      Her presentation will cover what the future picture of cities will look according to Share Hub."
   profile_img: kwon.png
 
-- name_ko: 김경서
-  name_en: Kyungseo Kim
-  title_ko:
-    "현) 서울시 정보기획단장<br />
-    전) 다음소프트 창립자"
-  title_en: General Director at Information System Planning of Seoul
-  desc_ko:
-    "'시민의 작은(Small) 고충까지도 해결하는 큰(Big) 데이터'라는 슬로건과 함께, 공공분야에서 생산되는 수많은 데이터와 민간데이터를 융합해 서울 시민의 일상을 바꾸고 있다. 빅데이터를 활용한 심야버스 정책, 지역별 상권분석 플랫폼 등 다양한 사례를 나눠본다."
-  desc_en:
-    "Under the slogan “Big Data that solves even small citizen complaint,”
-    Kim and his team are changing Seoul citizens’ everyday life
-    by combining and applying public and private data.
-    Hear the cases of overnight bus policiy and market research platform for local enterprises."
-  profile_img: seo.png
+# - name_ko: 김경서
+#   name_en: Kyungseo Kim
+#   title_ko:
+#     "현) 서울시 정보기획단장<br />
+#     전) 다음소프트 창립자"
+#   title_en: General Director at Information System Planning of Seoul
+#   desc_ko:
+#     "'시민의 작은(Small) 고충까지도 해결하는 큰(Big) 데이터'라는 슬로건과 함께, 공공분야에서 생산되는 수많은 데이터와 민간데이터를 융합해 서울 시민의 일상을 바꾸고 있다. 빅데이터를 활용한 심야버스 정책, 지역별 상권분석 플랫폼 등 다양한 사례를 나눠본다."
+#   desc_en:
+#     "Under the slogan “Big Data that solves even small citizen complaint,”
+#     Kim and his team are changing Seoul citizens’ everyday life
+#     by combining and applying public and private data.
+#     Hear the cases of overnight bus policiy and market research platform for local enterprises."
+#   profile_img: seo.png
 
 - name_ko: 장승훈
   name_en: Seunghun Jang
