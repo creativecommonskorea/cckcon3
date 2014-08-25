@@ -16,7 +16,7 @@
       <li class="heading"><h6>실버 후원</h6></li>
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.level == 'silver' %}
-      <li class="item-{{ sponsor.title_en | downcase }}"><a class="{{ sponsor.title_en | downcase }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
+      <li class="item-{{ sponsor.title_en | handleize }}"><a class="{{ sponsor.title_en | downcase }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
@@ -24,7 +24,7 @@
       <li class="heading"><h6>브론즈 후원</h6></li>
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.level == 'bronze' %}
-      <li class="item-{{ sponsor.title_en | downcase }}"><a class="{{ sponsor.title_en | downcase }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
+      <li class="item-{{ sponsor.title_en | handleize }}"><a class="{{ sponsor.title_en | handleize }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
@@ -32,13 +32,13 @@
       <li class="heading"><h6>미디어 후원</h6></li>
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.level == 'media' %}
-      <li class="item-{{ sponsor.title_en | downcase }}"><a class="bloter logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
+      <li class="item-{{ sponsor.title_en | handleize }}"><a class="{{ sponsor.title_en | handleize }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
     <ul class="menu-item partner clearfix">
       <li class="heading"><h6>파트너</h6></li>
-      <li class="item-{{ sponsor.title_en | downcase }}"><a href="http://sharehub.kr" target="_blank"><img src="{{ site.url }}/images/sharehub.png" alt=""></a></li>
+      <li><a href="http://sharehub.kr" target="_blank"><img src="{{ site.url }}/images/sharehub.png" alt=""></a></li>
     </ul>
 	</nav><!-- /.bottom-menu -->
 	<p class="copyright">{{ site.time | date: '%Y' }} Creative Commons Korea. Some Rights Reserved.<br />달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.<br />자세한 이용기능 내용과 허락조건은 <a href="http://creativecommons.org/licences/by/2.0/kr" target="_blank">http://creativecommons.org/licences/by/2.0/kr</a> 를 보세요.</p>

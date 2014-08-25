@@ -325,17 +325,23 @@ body {
     background: url('/images/naver.png');
     background-size: 108px 40px;
   }
-  .youth {
+  .youth-hub {
     width: 75px;
     height: 40px;
     background: url('/images/youthhub.png');
     background-size: 75px 40px;
   }
-  .bloter {
+  .bloternet {
     width: 152px;
     height: 40px;
     background: url('/images/bloterdotnet.png');
     background-size: 152px 40px;
+  }
+  .platum {
+    width: 129px;
+    height: 40px;
+    background: url('/images/platum.png');
+    background-size: 129px 40px;
   }
   .copyright, .license {
     float: left;
@@ -346,8 +352,9 @@ body {
   .menu li a:active::after, .menu li a:hover::after {
     width: auto;
   }
-  .item-naver {
-    margin-left: 20px;
+  .item-airbnb,
+  .item-bloternet {
+    margin-right: 20px;
   }
 
 }
