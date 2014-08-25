@@ -64,3 +64,15 @@
   level: media
   logo_img: platum.png
   url: http://platum.kr
+
+- title_ko: 데모데이
+  title_en: DEMODAY
+  desc_ko:
+    "데모데이는 3,000개의 스타트업을 대상으로 한 설문조사와 다양한 경로를 통해 수집된 의견들을 바탕으로, 스타트업의 비용절감과
+    매출증대를 위한 “지원프로그램”을 제공하고 있으며, “채용”, “홍보”, “대기업 제휴”, “투자” 등의 서비스도 함께 제공 중입니다.
+    또한, “스타트업 DB”와 “랭킹”을 통해 유망한 스타트업을 투자자, 언론, 대기업 등에 지속적으로 소개 및 연결하고 있습니다."
+  desc_en:
+    ""
+  level: media
+  logo_img: demoday.png
+  url: http://www.demoday.co.kr

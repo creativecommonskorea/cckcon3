@@ -343,6 +343,12 @@ body {
     background: url('/images/platum.png');
     background-size: 129px 40px;
   }
+  .demoday {
+    width: 162px;
+    height: 40px;
+    background: url('/images/demoday.png');
+    background-size: 162px 40px;
+  }
   .copyright, .license {
     float: left;
   }
@@ -353,7 +359,8 @@ body {
     width: auto;
   }
   .item-airbnb,
-  .item-bloternet {
+  .item-bloternet,
+  .item-platum {
     margin-right: 20px;
   }
 
