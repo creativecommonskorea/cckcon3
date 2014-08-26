@@ -68,11 +68,19 @@
 - title_ko: 데모데이
   title_en: DEMODAY
   desc_ko:
-    "데모데이는 3,000개의 스타트업을 대상으로 한 설문조사와 다양한 경로를 통해 수집된 의견들을 바탕으로, 스타트업의 비용절감과
-    매출증대를 위한 “지원프로그램”을 제공하고 있으며, “채용”, “홍보”, “대기업 제휴”, “투자” 등의 서비스도 함께 제공 중입니다.
-    또한, “스타트업 DB”와 “랭킹”을 통해 유망한 스타트업을 투자자, 언론, 대기업 등에 지속적으로 소개 및 연결하고 있습니다."
+    "데모데이는 한국의 스타트업 포털로서 약 11,000여개의 스타트업들이 등록되어 있으며, 투자사 및 관련 정부기관들에 대한 정보와 더불어 각종 지원 프로그램들을 제공하고 있다."
   desc_en:
-    ""
+    "Demoday is the No.1 startup portal in Korea, with over 11,000 registered members including startups, major companies, investment firms, and startup-related government entities and various networks."
   level: media
   logo_img: demoday.png
   url: http://www.demoday.co.kr
+
+- title_ko: 다음
+  title_en: Daum
+  desc_ko:
+    "다음(Daum)은 대한민국의 포털 사이트이다. \"한메일\"(현재의 다음 메일)이라는 이름으로 대한민국 최초의 웹 메일 서비스를 열었으며, 이 밖에도 온라인 커뮤니티 서비스 ‘Daum 카페’, 뉴스 서비스 ‘미디어다음’, 커뮤니케이션 서비스 마이피플 등을 서비스하고 있다."
+  desc_en:
+    "Daum is a web portal in South Korea, like Naver and Nate. Daum offers many Internet services to web users, including a popular free web-based e-mail, messaging service, forums, shopping and news."
+  level: bronze
+  logo_img: daum.png
+  url: http://daum.net

@@ -349,6 +349,12 @@ body {
     background: url('/images/demoday.png');
     background-size: 162px 40px;
   }
+  .daum {
+    width: 98px;
+    height: 40px;
+    background: url('/images/daum.png');
+    background-size: 98px 40px;
+  }
   .copyright, .license {
     float: left;
   }
@@ -360,7 +366,8 @@ body {
   }
   .item-airbnb,
   .item-bloternet,
-  .item-platum {
+  .item-platum,
+  .item-youth-hub {
     margin-right: 20px;
   }
 
