@@ -319,6 +319,12 @@ body {
     background: url('/images/airbnb.png');
     background-size: 128px 40px;
   }
+  .google {
+    width: 127px;
+    height: 40px;
+    background: url('/images/google.png');
+    background-size: 127px 40px;
+  }
   .naver {
     width: 108px;
     height: 40px;
@@ -365,9 +371,10 @@ body {
     width: auto;
   }
   .item-airbnb,
+  .item-google,
+  .item-daum,
   .item-bloternet,
-  .item-platum,
-  .item-youth-hub {
+  .item-demoday {
     margin-right: 20px;
   }
 
