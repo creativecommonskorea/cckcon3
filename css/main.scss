@@ -331,6 +331,12 @@ body {
     background: url('/images/naver.png');
     background-size: 108px 40px;
   }
+  .daum {
+    width: 98px;
+    height: 40px;
+    background: url('/images/daum.png');
+    background-size: 98px 40px;
+  }
   .youth-hub {
     width: 75px;
     height: 40px;
@@ -355,11 +361,11 @@ body {
     background: url('/images/demoday.png');
     background-size: 162px 40px;
   }
-  .daum {
-    width: 98px;
-    height: 40px;
-    background: url('/images/daum.png');
-    background-size: 98px 40px;
+  .venturesquare {
+    width: 162px;
+    height: 15px;
+    background: url('/images/venturesquare.png');
+    background-size: 162px 15px;
   }
   .copyright, .license {
     float: left;
@@ -374,8 +380,12 @@ body {
   .item-google,
   .item-daum,
   .item-bloternet,
-  .item-demoday {
+  .item-demoday,
+  .item-platum {
     margin-right: 20px;
+  }
+  .item-venturesquare {
+    padding-top: 10px;
   }
 
 }

@@ -94,3 +94,14 @@
   level: media
   logo_img: platum.png
   url: http://platum.kr
+
+- title_ko: 벤처스퀘어
+  title_en: VentureSquare
+  desc_ko:
+    "벤처스퀘어는 2010년 설립된 스타트업 전문 미디어 및 액셀러레이터로서 한국의 스타트업 및 기술 분야에 대한 최근 뉴스와 트렌드, 분석기사를 전달하고 있으며, 초기 스타트업을 육성해나가고 있습니다. 벤처스퀘어는 스타트업, 투자사, 대기업, 그리고 정부기관을 이어주는 스타트업의 허브로서 혁신적이고 지속 가능한 스타트업 생태계를 만들기 위한 활동을 전개해나가고 있습니다."
+  desc_en:
+    "VentureSquare brings you the latest news, trends and analysis about startups and technology in South Korea. We act as a hub between startups, investors, major companies and the government to create a place where startups can grow.Founded in 2010, VentureSquare is located in Seoul, South Korea.We discover and spread venture stories so that more people can find out about startups in Korea."
+  level: media
+  logo_img: venturesquare.png
+  url: http://venturesquare.net
+
