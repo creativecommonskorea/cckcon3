@@ -53,11 +53,20 @@
     "Lead of Code for Japan<br />
     Certified Developer by Ushahidi"
   desc_ko:
-    "일본에서 Civic Hacker로 활동중이다. 쓰나미와 원전사고로 폐해가 된 나미에 지역의 주민을 돕기 위해서 420명의 개발자가 모여서 앱,웹 서비스를 개발하는 등 다양한 프로젝트의 리더로 활동하고 있다."
+    "세키는 일본에서 Civic Hacker로 활동 중이다.
+    2002년부터 Geo 개발자로 근무했으며 또한 일본 내 사회 문제를 해결하기 위한 커뮤니티 관리자로 잘 알려져 있다.
+    동일본대지진이 발생한 2010년부터 우샤히디를 활용해 재난 정보를 수집하기 위한 클라우드 소싱 플랫폼인
+    Sinsai.info를 운영하면서 우샤히디 인증 개발자라는 타이틀도 얻었다.
+    현재 코드포재팬의 대표자로 활동하고 있다."
   desc_en:
-    "Seki is a civic hacker from Japan. He is the leader of 420 developers
-    who are creating web and mobile application services
-    for Tsunami and nuclear disaster victims."
+    "Seki is a civic hacker from Japan.
+    Besides he has been working as a Geo Developer since 2002,
+    he is well known as a community manager for solving social issues in Japan.
+    Also, He is entitled as Ushahidi Certificated Developer
+    since he has been a managing director of Sinsai.info,
+    a cloud sourcing platform for collecting crisis information
+    using Ushahidi since 2010, the Great East Japan Earthquake occurred.
+    He is also a representative of Code for Japan."
   profile_img: hal.png
 
 - name_ko: 헬렌 한
