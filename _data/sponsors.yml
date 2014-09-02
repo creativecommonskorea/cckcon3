@@ -22,6 +22,17 @@
   logo_img: airbnb.png
   url: http://airbnb.com
 
+- title_ko: 동그라미 재단
+  title_en: The Circle foundation
+  desc_ko:
+    "동그라미재단은 \"기회는 누구에게나 공평하게 주어져야 하며, 그것이 바로 우리사회의 문제를 해결하는 출발점\"이라는 믿음을 갖고 있습니다.
+    재단은 스스로 자신의 꿈을 향해 나아가는 분들이 기회를 찾을 수 있도록 상호 협력의 장을 제공하려 합니다. 같은 뜻을 가지신 분들이 함께 모여 고민하고, 기회를 만들어 내고, 그래서 의미있는 사회 변화를 주도할 수 있도록 돕겠습니다."
+  desc_en:
+    ""
+  level: silver
+  logo_img: circle.png
+  url: http://www.thecircle.or.kr
+
 - title_ko: 구글
   title_en: Google
   desc_ko:
