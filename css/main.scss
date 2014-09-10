@@ -309,6 +309,12 @@ body {
   float: right;
   text-decoration: none;
   margin-top: 2.3em;
+  margin-right: 1em;
+  font-family: "Helvetica Neue","Segoe UI",Arial,sans-serif;
+  text-rendering: optimizeLegibility
+}
+a.more:hover {
+  color: $primary-color;
 }
 
 .sliding-menu-content .menu-item>li .btn {
