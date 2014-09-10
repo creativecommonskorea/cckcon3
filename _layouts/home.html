@@ -168,10 +168,10 @@
       /**
        * Dynamic top menu positioning
        */
-      var num = 600; //number of pixels before modifying styles
+      var height = $('.page-lead').outerHeight(); //number of pixels before modifying styles
 
       $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > num) {
+        if ($(window).scrollTop() > height) {
           $('#masthead').addClass('fixed');
         } else {
           $('#masthead').removeClass('fixed');
