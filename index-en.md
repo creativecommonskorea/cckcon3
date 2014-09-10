@@ -22,5 +22,5 @@ fresh inspirations from people whose efforts are bringing positive changes to th
 
 - Date & Time: September 16th (Tuesday), 2014 from 10:00 AM to 6:00 PM
 - Venue : Ferrum Hall @ Ferrum Tower 3F (Junggu Suhadong, Seoul) 
-- Fee: 50,000 KRW (free for CC KOREA supporters)
+- Fee: 50,000 KRW (free for CC KOREA supporters, lunch provided.)
 - Hosted by CC KOREA
