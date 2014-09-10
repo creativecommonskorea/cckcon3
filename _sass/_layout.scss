@@ -4,14 +4,20 @@
 #masthead {
 	padding: $gutter;
 	z-index: 5;
-	@include transform(translate(0,0));
-	@include transition(500ms cubic-bezier(.645,.045,.355,1.000));
+	// @include transform(translate(0,0));
+	// @include transition(500ms cubic-bezier(.645,.045,.355,1.000));
 	&.slide {
 		@include transform(translate(-1600px,0));
 	}
 	.inner-wrap {
 		@include outer-container;
 	}
+  @include media($medium) {
+    padding-bottom: 0;
+  }
+  @include media($large) {
+    padding-bottom: $gutter/2;
+  }
 }
 .site-title {
 	@include row;
@@ -94,10 +100,11 @@
 	display: none;
 	position: relative;
 	@include media($medium) {
-		@include span-columns(12);
+		@include span-columns(9);
+    float: right;
 	}
 	@include media($large) {
-		@include span-columns(7);
+		@include span-columns(8);
 		ul {
 			position: absolute;
 			right: 0;

@@ -150,18 +150,20 @@ body {
 }
 
 .profile-img {
-  float: left;
+  margin: 0 0 20px 20px;
   border-radius: 50%;
-  @include media($micro) {
-    margin: 0 0 20px 20px;
+  display: block;
+  @include media($large) {
+    float: left;
   }
 }
 
 .profile {
   margin-top: 0;
-  padding-left: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
   overflow: hidden;
-  @include media($micro) {
+  @include media($small) {
     width: 95%;
     padding-right: 0.5em;
   }
@@ -191,26 +193,34 @@ body {
 }
 
 #info {
-  border-top: 1px solid #eaeaea;
-  background-color: $white;
+  background-color: #f5f5f5;
+  .wrap {
+    padding-top: 1em;
+    @include media($medium) {
+      padding: 1em 1em 0 1em;
+    }
+  }
 }
 
 .resp-tabs-list {
   display: block;
-  background-color: #eaeaea;
-  width: 80%;
+
+  width: 100%;
   margin: 0 auto;
   li {
-    border-top: none;
+    // border-top: none;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
     h3 {
-      margin: 0em 2em;
+      margin: 0em 1em;
       padding: 0;
     }
   }
 }
 
 .resp-tabs-container {
-  background-color: #eaeaea;
+  // background-color: #eaeaea;
+  background-color: $white;
 }
 
 .speaker-header {
@@ -247,7 +257,6 @@ body {
   margin-top: 70px;
   @include media($small) {
     background-size: 200%;
-
   }
 }
 
@@ -257,13 +266,43 @@ body {
 }
 
 .site-title {
-  width: 206px;
-  height: 35px;
   background: url('/images/cck-logo.png');
-  background-size: 206px 35px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+  float: left;
+
+  width: 206px;
+  height: 34px;
+  background-size: 206px 34px;
+  margin-bottom: 1em;
+
+  @include media($micro) {
+    width: 155px;
+    height: 26px;
+    background-size: 155px 26px;
+    padding: 0;
+    margin-right: 1em;
+  }
+  @include media($medium) {
+    /* width: 165px;
+    height: 28px;
+    background-size: 165px 28px;
+    margin-right: 1em; */
+    width: 140px;
+    height: 23px;
+    background-size: 140px 23px;
+    padding: 0;
+    margin-right: 1em;
+    margin-top: 0.7em;
+  }
+  @include media($large) {
+    width: 206px;
+    height: 34px;
+    background-size: 206px 34px;
+    margin-bottom: 1em;
+  }
+
 }
 
 .more {
@@ -439,6 +478,54 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-a.lang {
-  font-size: 0.5em;
+.top-menu li {
+  a {
+    @include media($medium) {
+      font-size: 90%;
+    }
+    @include media($large) {
+      font-size: 100%;
+    }
+  }
+  a.lang {
+    font-size: 70%;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.7em;
+  }
+}
+
+.menu li a {
+  @include media($medium) {
+    margin-right: 0.8em;
+  }
+  @include media($large) {
+    margin-right: 1.618em;
+  }
+}
+
+#btn-register {
+  float: left;
+  margin: 0;
+  padding: 4px 10px;
+  display: none;
+  @include media($micro) {
+    display: block;
+  }
+  @include media($small) {
+    display: block;
+    position: absolute;
+    right: 100px;
+  }
+}
+
+#btn-register-md {
+  @include media($medium) {
+    margin: 0.7em 0 0 1em;
+    padding: 4px 10px;
+  }
+  @include media($large) {
+    margin: 0.7em 0 0 1.4em;
+    padding: 8px 20px;
+  }
 }
