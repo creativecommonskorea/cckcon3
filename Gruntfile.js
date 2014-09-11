@@ -35,7 +35,10 @@ module.exports = function(grunt) {
           '_layouts/**',
           '_includes/**',
           '_posts/**',
-          '_work/**'
+          '_work/**',
+          'css/**',
+          'js/**',
+          'images/**'
         ],
         tasks: ['shell:jekyllBuild'],
         options: {

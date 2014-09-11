@@ -85,6 +85,16 @@
   logo_img: bloterdotnet.png
   url: http://www.bloter.net
 
+- title_ko: 온오프믹스
+  title_en: ONOFFMIX
+  desc_ko:
+    ""
+  desc_en:
+    ""
+  level: media
+  logo_img: onoffmix.jpg
+  url: http://onoffmix.com
+
 - title_ko: 데모데이
   title_en: DEMODAY
   desc_ko:
