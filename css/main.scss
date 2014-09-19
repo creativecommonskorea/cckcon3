@@ -313,7 +313,9 @@ body {
   font-family: "Helvetica Neue","Segoe UI",Arial,sans-serif;
   text-rendering: optimizeLegibility
 }
-a.more:hover {
+
+a.more:hover,
+#site-footer .copyright a:hover {
   color: $primary-color;
 }
 
@@ -604,4 +606,8 @@ a.more:hover {
   @include media($micro) {
     margin-top: 10px;
   }
+}
+
+.github {
+  font-size: 150%;
 }
