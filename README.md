@@ -48,6 +48,6 @@ At last, thanks for supporters of CC Korea.
 ```
 
 [Skinny Bones Jekyll Starter](https://github.com/mmistakes/skinny-bones-jekyll)를 기반으로 이 웹사이트를 작성했습니다. Michael Rose님 땡유...   
-This webiste was written based on [Skinny Bones Jekyll Starter](https://github.com/mmistakes/skinny-bones-jekyll). Thanks for Michael Rosethe.   
+This webiste was written based on [Skinny Bones Jekyll Starter](https://github.com/mmistakes/skinny-bones-jekyll). Thanks, Michael Rose.   
 
 MIT licensed...
