@@ -5,6 +5,11 @@
   excerpt: about CCKcon 2014
   # image: 400x250.gif
 
+# - title: Programs
+#   url: /programs/
+#   excerpt: Sessions
+#   # image: 400x250.gif
+
 - title: Schedule
   url: /schedule/
   excerpt: Time table of programs
