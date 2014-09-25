@@ -55,6 +55,15 @@
     </div><!-- /.page-lead -->
     {% endif %}
 
+    <div class="page-lead desc">
+      <div class="wrap page-lead-content">
+        <div class="content">
+          {{ content }}
+        </div>
+      </div>
+      </div><!-- /.page-lead-content -->
+    </div><!-- /.page-lead -->
+
     <div id="page-wrapper">
       {% include browser-upgrade.html %}
     </div>
@@ -65,69 +74,9 @@
 
     <div class="program-content clearfix">
       <div class="tiles wrap">
-        <article class="tile-one-third">
-          <h4>
-            세션 1.<br />
-            창작과 공유
-          </h4>
-          <ul>
-            <li>
-              <h5><a href="">(여는 강연) "모든 것을 공유하라"<br/>
-              라이언 머클리 / 크리에이티브 커먼즈 CEO</a></h5>
-            </li>
-            <li>
-              <h5><a href="">"즐거운 디지털 놀이터 Maker Space"<br/>
-              드 포터 / 팹카페 글로벌 공동 설립자</a></h5>
-            </li>
-            <li>
-              <h5><a href="">"크리에이티브의 무한 동력, 공유저작물"<br/>
-              여정호 / 한국저작권위원회 저작권정보센터장</a></h5>
-            </li>
-          </ul>
-        </article>
-
-        <article class="tile-one-third">
-          <h4>
-            세션 1.<br />
-            창작과 공유
-          </h4>
-          <ul>
-            <li>
-              <h5><a href=""><br/>
-              </a></h5>
-            </li>
-            <li>
-              <h5><a href="">"즐거운 디지털 놀이터 Maker Space"<br/>
-              </a></h5>
-            </li>
-            <li>
-              <h5><a href=""><br/>
-              </a></h5>
-            </li>
-          </ul>
-        </article>
-
-        <article class="tile-one-third last">
-          <h4>
-            세션 1.<br />
-            창작과 공유
-          </h4>
-          <ul>
-            <li>
-              <h5><a href="">(여는 강연) "모든 것을 공유하라"<br/>
-              라이언 머클리 / 크리에이티브 커먼즈 CEO</a></h5>
-            </li>
-            <li>
-              <h5><a href="">"즐거운 디지털 놀이터 Maker Space"<br/>
-              드 포터 / 팹카페 글로벌 공동 설립자</a></h5>
-            </li>
-            <li>
-              <h5><a href="">"크리에이티브의 무한 동력, 공유저작물"<br/>
-              여정호 / 한국저작권위원회 저작권정보센터장</a></h5>
-            </li>
-          </ul>
-        </article>
-
+        {% for session in site.data.sessions.ko %}
+          {% include session.html %}
+        {% endfor %}
       </div><!-- /.tiles -->
     </div>
 

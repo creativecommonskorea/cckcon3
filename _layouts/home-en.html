@@ -8,38 +8,17 @@
     <meta name="keywords" content="Creative Commons Korea, Internationl Conference, Share, Connect, Creativity, Sharing City, Civic Hacking{% if page.tags %}, {{ page.tags | join: ', ' }} {% endif %}">
     <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title_en }}</title>
     {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
-
     {% if page.author %}
       {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
     {% endif %}
     {% include open-graph-en.html %}
     {% if author.google.plus %}<link rel="author" href="https://plus.google.com/{{ author.google.plus }}"/>{% endif %}
-
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-
     <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
-
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
-
-    <style>
-    .sliding-menu-content {
-      top: 0;
-      right: 0;
-      text-align: center;
-      visibility: hidden;
-      height: 100%;
-      width: 100%;
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    </style>
-
     <link rel="stylesheet" href="{{ site.url }}/css/easy-responsive-tabs.css">
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
 
@@ -63,11 +42,12 @@
     </script>
 
     {% if page.image.feature %}
-    <div class="page-lead" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
-      <div class="wrap page-lead-content top">
-        <h1>Share Everything,<br />Connect Everything</h1>
-        <h2>2014 CC korea International Conference</h2>
-        <h2>16 September 2014</h2>
+    <div class="page-lead splash" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
+      <div class="wrap page-lead-content">
+        <h1 class="thanks"><span>Thanks to all the participants</span></h1>
+        <h1><span>Share Everything,</span><br /><span>Connect Everything</span></h1>
+        <h2><span>2014 CC korea International Conference</span></h2>
+        <h2><span>16 September 2014</span></h2>
         <!-- <h2>Ferrum Hall @ Ferrum Tower 3F (Junggu Suhadong, Seoul, South Korea)</h2> -->
 
       </div><!-- /.page-lead-content -->
@@ -102,74 +82,11 @@
       </div><!-- /.tiles -->
     </div>
 
-    <div id="info">
-      <div class="wrap">
-        <ul class="resp-tabs-list">
-          <li><h3>Venue</h3></li>
-          <li><h3>Press Release</h3></li>
-          <li><h3>Sponsors</h3></li>
-        </ul>
-      </div>
-      <div class="resp-tabs-container">
-        <div>
-          <div class="wrap">
-            <div class="map card">
-              <a href="https://www.google.co.kr/maps/place/페럼타워/@37.567035,126.983941,16z/data=!4m2!3m1!1s0x357ca2ef0370d2d1:0xc4e8b08386639fe1?hl=en"><img src="{{ site.url }}/images/ferrum-hall-map.gif" alt="ferrum hall - google map" /></a>
-              {% assign conf = site.data.conf %}
-              <h3>Ferrum Hall</h3>
-              <p>3rd Floor, Ferrum Tower, 19 Uljiro 5-gil, Jung-gu, Seoul</p>
-              <p>Near by Gate 3, Euljiro 1-ga Station, Subway Line No.2</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="wrap">
-            <div class="card">
-            <img src="/images/cc.png" alt="">
-            <p>Now CC KOREA International Conference want to make fresh inspirations from people whose efforts are bringing positive changes through technology.</p>
-
-            <p>Please contact about Press, Journal and interview of Conference’s speakers.</p>
-            <img src="/images/press-contact.png" alt="">
-            <p>Nansil Kwon</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="wrap">
-            <div class="card">
-            <img src="/images/cc.png" alt="">
-            <p>Now CC KOREA International Conference want to make fresh inspirations from people whose efforts are bringing positive changes through technology. CC KOREA International Conference is delighted to have continuing support from our fabulous sponsors, who help make the event such a success.</p>
-            <p>Please contact below representatives.</p>
-            <img src="/images/sponsor-contact.png" alt="">
-            <p>Hyunsook Kang</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-
-  {% include footer-en.html %}
-
+    {% include footer-en.html %}
 
     <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
     <script src="{{ site.url }}/js/vendor/easyResponsiveTabs.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
-    <script>
-      $('#info').easyResponsiveTabs();
-      /**
-       * Dynamic top menu positioning
-       */
-      var height = $('.page-lead').outerHeight(); //number of pixels before modifying styles
-
-      $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > height) {
-          $('#masthead').addClass('fixed');
-        } else {
-          $('#masthead').removeClass('fixed');
-        }
-      });
-    </script>
 
   </body>
 

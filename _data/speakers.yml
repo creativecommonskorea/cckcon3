@@ -69,17 +69,17 @@
     He is also a representative of Code for Japan."
   profile_img: hal.png
 
-- name_ko: 헬렌 한
-  name_en: Helene Hahn
-  title_ko: "현) 오픈 놀리지 파운데이션 독일<br />코딩다빈치 프로젝트 PM"
-  title_en:
-    "Open Knowledge Foundation Germany<br />
-    Project Manager of <em>Coding Da Vinci</em> Project"
-  desc_ko:
-    "코딩 다 빈치는 문화유산 단체, 해커 및 디자인 커뮤니티가 함께 문화 및 공공 영역에 대한 아이디어 및 프로토타입을 개발한 독일 최초의 개방형 문화 데이터 해커톤이다. 독일 내 다양한 문화유산 단체들이 공개한 데이터를 활용해서 총 17개 프로젝트가 운영 중이다."
-  desc_en:
-    "Coding da Vinci is the first German open cultural data hackathon that brings together both cultural heritage institutions and the hacker & designer community to develop ideas and prototypes for the cultural sector and the public. All 17 developed projects run on open cultural data opened up by various cultural heritage institutions around Germany."
-  profile_img: helene.png
+# - name_ko: 헬렌 한
+#   name_en: Helene Hahn
+#   title_ko: "현) 오픈 놀리지 파운데이션 독일<br />코딩다빈치 프로젝트 PM"
+#   title_en:
+#     "Open Knowledge Foundation Germany<br />
+#     Project Manager of <em>Coding Da Vinci</em> Project"
+#   desc_ko:
+#     "코딩 다 빈치는 문화유산 단체, 해커 및 디자인 커뮤니티가 함께 문화 및 공공 영역에 대한 아이디어 및 프로토타입을 개발한 독일 최초의 개방형 문화 데이터 해커톤이다. 독일 내 다양한 문화유산 단체들이 공개한 데이터를 활용해서 총 17개 프로젝트가 운영 중이다."
+#   desc_en:
+#     "Coding da Vinci is the first German open cultural data hackathon that brings together both cultural heritage institutions and the hacker & designer community to develop ideas and prototypes for the cultural sector and the public. All 17 developed projects run on open cultural data opened up by various cultural heritage institutions around Germany."
+#   profile_img: helene.png
 
 - name_ko: 토드 포터
   name_en: Todd Porter

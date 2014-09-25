@@ -23,23 +23,6 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
-
-    <style>
-    .sliding-menu-content {
-      top: 0;
-      right: 0;
-      text-align: center;
-      visibility: hidden;
-      height: 100%;
-      width: 100%;
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    </style>
-
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
@@ -63,9 +46,9 @@
     {% include navigation-sliding-en.html %}
 
     {% if page.image.feature %}
-    <div class="page-lead" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
-      <div class="wrap page-lead-content">
-        &nbsp;<br />&nbsp;<br />&nbsp;
+    <div class="page-lead splash" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
+      <div class="page-lead-content">
+        &nbsp;<br />&nbsp;<br />&nbsp;<br />
       </div><!-- /.page-lead-content -->
     </div><!-- /.page-lead -->
     {% endif %}
@@ -76,138 +59,7 @@
         <div class="wrap"><h3>{{ page.title | upcase }}</h3></div>
       </div>
       <div class="wrap">
-        {% case page.url %}
-        {% when '/en/speakers/' %}
-          {% for speaker in site.data.speakers %}
-            {% include speaker-en.html %}
-          {% endfor %}
-        {% when '/en/sponsors/' %}
-          {% assign levels =  site.data.sponsors | group_by:"level" %}
-          {% for level in levels %}
-            {% include sponsor-en.html %}
-          {% endfor %}
-
-        {% else %}
-        <div class="schedule">
-          <table>
-            <thead>
-              <tr>
-                <th class="time">Time</th>
-                <th class="session">Session</th>
-                <th class="title">Title</th>
-                <th class="speaker">Speakers</th>
-              </tr>
-            </thead>
-
-          <tbody>
-            <tr class="sep">
-            <td>09:30 ~ 10:00 (30')</td>
-            <td>Registration</td>
-            <td>Registration</td>
-            <td></td>
-            </tr>
-            <tr class="sep">
-            <td>10:00 ~ 10:10 (10')</td>
-            <td>Welcome</td>
-            <td>Welcome</td>
-            <td>Jeongwook Seo / CCKOREA Director of Board</td>
-            </tr>
-            <tr>
-            <td>10:10 ~ 10:40 (30')</td>
-            <td class="highlight" rowspan="4">"Creativity and Sharing"</td>
-            <td class="title">[Keynote] "Share Everything"</td>
-            <td>Ryan Merkley / CEO of Creative Commons</td>
-            </tr>
-            <tr>
-            <td>10:45 ~ 11:05 (20')</td>
-            <td class="title">“Recreated Culture and Art of the Past”</td>
-            <td>Helene Hahn / OKFN</td>
-            </tr>
-            <tr>
-            <td>11:10 ~ 11:30 (20')</td>
-            <td class="title">"Joyful digital playground: Maker Space"</td>
-            <td>Todd Porter/ Co-founder FabCafe Global</td>
-            </tr>
-            <tr>
-            <td>11:35 ~ 11:55 (20')</td>
-            <td class="title">"Infinite Power of Creativity Shared work"</td>
-            <td>Jeongho Yeo / Korea Copyright Commission</td>
-            </tr>
-            <tr class="sep">
-            <td style="padding: 0;">&nbsp;</td>
-            <td colspan="2" style="height: 10px; padding: 3px 0 3px 1em; font-size: 80%;">Sponsored by Korea Copyright Commission.</td>
-            <td style="padding: 0;">&nbsp;</td>
-            </tr>
-            <tr class="sep">
-            <td>11:55 ~ 13:20 (85')</td>
-            <td colspan="3">Lunch</td>
-            </tr>
-            <tr>
-            <td>13:20 ~ 13:50 (30')</td>
-            <td class="highlight" rowspan="3">"Sharing City"</td>
-            <td class="title">[Keynote] “Designing City as Sharing Platform"</td>
-            <td>Kyung Min Kim / Graduate School of Environmental Studies, Seoul National University</td>
-            </tr>
-            <tr>
-            <td>13:55 ~ 14:15 (20')</td>
-            <td class="title">Share Hub ”Drawing the NEXT CIty with Sharing”</td>
-            <td>Nanshil Kwon / CCKOREA</td>
-            </tr>
-            <tr class="sep">
-            <td>14:20 ~ 14:50 (30')</td>
-            <td class="title">"The Sharing Economy and Its Impact on the Future of Cities"</td>
-            <td>Molly Turner / Director of Public Policy and Civic Partnership at Airbnb</td>
-            </tr>
-            <tr class="sep">
-            <td>14:50 ~ 15:10 (20')</td>
-            <td colspan="3">Break Time</td>
-            </tr>
-            <tr>
-            <td>15:10 ~ 15:40 (30')</td>
-            <td class="highlight" rowspan="4">"Civic Hacking"</td>
-            <td class="title">[Keynote] "Connect Everyhing"</td>
-            <td>Jay Yoon / Project lead of Creative Commons Korea</td>
-            </tr>
-            <tr>
-            <td>15:45 ~ 16:15 (30')</td>
-            <td class="title">Code for Japan ”420 Techies for Namie”</td>
-            <td>Hal Seki / Code for Japan</td>
-            </tr>
-            <tr>
-            <td>16:20 ~ 16:40 (20')</td>
-            <td class="title">"The Convergence of Art and Technology, public data"</td>
-            <td>Sey Min / Randomwalks</td>
-            </tr>
-            <tr class="sep">
-            <td>16:45 ~ 17:05 (20')</td>
-            <td class="title">“Hacking the City with Technology”</td>
-            <td>Seung-hun Jang / Codenamu</td>
-            </tr>
-            <tr class="sep">
-            <td style="padding: 0;">&nbsp;</td>
-            <td colspan="2" style="height: 10px; padding: 3px 0 3px 1em; font-size: 80%;">Sponsored by The Circle foundation.</td>
-            <td style="padding: 0;">&nbsp;</td>
-            </tr>
-            <tr class="sep">
-            <td>17:05 ~ 17:15 (10')</td>
-            <td colspan="3">Intermission</td>
-            </tr>
-            <tr>
-            <td>17:15 ~ 17:45 (30')</td>
-            <td>Discussion</td>
-            <td class="title">"Design Tomorrow with Sharing and Cooperation"</td>
-            <td>Jay Yoon, Wonsoon Park</td>
-            </tr>
-            <tr>
-            <td style="border-top: 1px solid gray; border-bottom: 1px solid gray;">17:45 ~
-            18:00 (15')</td>
-            <td colspan="3" style="border-top: 1px solid gray; border-bottom: 1px solid gray;">
-            Closing</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-        {% endcase %}
+        {{ content }}
       </div>
 
     </div>
@@ -216,32 +68,6 @@
 
     <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
-    <script>
-      $('#masthead').addClass('fixed');
-    </script>
-
-    {% if page.toc == true %}
-    <script type="text/javascript">
-      $('.toc').toc({
-        'selectors': 'h2', //elements to use as headings
-        'container': '.page-content', //element to find all selectors in
-        'smoothScrolling': true, //enable or disable smooth scrolling on click
-        'prefix': 'toc', //prefix for anchor tags and class names
-        'onHighlight': function(el) {}, //called when a new section is highlighted
-        'highlightOnScroll': true, //add class to heading that is currently in focus
-        'highlightOffset': 100, //offset to trigger the next headline
-        'anchorName': function(i, heading, prefix) { //custom function for anchor name
-          return prefix+i;
-        },
-        'headerText': function(i, heading, $heading) { //custom function building the header-item text
-          return $heading.text();
-        },
-        'itemClass': function(i, heading, $heading, prefix) { //custom function for item class
-          return $heading[0].tagName.toLowerCase();
-        }
-      });
-    </script>
-    {% endif %}
 
   </body>
 

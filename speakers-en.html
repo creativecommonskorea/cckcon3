@@ -8,6 +8,10 @@ modified: 2014-08-13 10:30:00 +0900
 excerpt: "Speakers of 2014 CC Korea Internation Conference."
 tags: []
 image:
-  feature: mainbg.jpg
+  feature: after-banner.jpg
 ads: false  
 ---
+
+{% for speaker in site.data.speakers %}
+  {% include speaker-en.html %}
+{% endfor %}

@@ -84,6 +84,10 @@ body * {
   }
 }
 
+.default .splash .page-lead-content {
+  margin-top: 0em;
+}
+
 .page-lead-content {
   padding: 1em;
   font-size: 1em;
@@ -102,14 +106,6 @@ body * {
     p {
       font-size: 1em;
     }
-  }
-}
-
-.page-lead-content.top {
-  visibility: hidden;
-  height: 600px;
-  @include media($micro) {
-    height: 240px;
   }
 }
 
