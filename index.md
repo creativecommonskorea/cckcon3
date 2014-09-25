@@ -7,7 +7,7 @@ excerpt:
   기술로 긍정적인 변화를 만들어 내는 사람들의 생각과 경험을 공유합니다.
   2014년 9월 16일 10~18시, 페럼홀(을지로 입구)"
 image:
-  feature: mainbanner.jpg
+  feature: after-banner.jpg
 ---
 
 공유의 시대가 되었습니다.   
