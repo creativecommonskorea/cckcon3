@@ -679,3 +679,15 @@ section {
   aside { @include span-columns(4); }
   article { @include span-columns(8); }
 }
+
+article.tile-one-third {
+  li {
+    list-style: none;
+  }
+}
+.download {
+  margin-bottom: 3em;
+}
+.button {
+  @include button(pill, #cccccc);
+}
