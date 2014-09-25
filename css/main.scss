@@ -29,8 +29,12 @@
 @import "layout";
 @import "pygments";
 
-body {
-  font-family: "Nanum Gothic", sans-serif;
+// @import "nanumbarungothic.css";
+
+body * {
+  font-family: "Nanum Barun Gothic", sans-serif;
+  letter-spacing: 0.2px;
+  font-weight: normal;
 }
 
 .page-lead {

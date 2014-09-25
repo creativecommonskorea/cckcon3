@@ -2,8 +2,8 @@
 
 WebFontConfig = {
 custom: {
-    families: ['Nanum Gothic'],
-    urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+    families: ['Nanum Barun Gothic'],
+    urls: ['/css/nanumbarungothic.css']
   }
 };
 
