@@ -29,10 +29,11 @@ $(document).ready(function(){
 
 WebFontConfig = {
 custom: {
-    families: ['Nanum Gothic'],
-    urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
-}
+    families: ['Nanum Barun Gothic'],
+    urls: ['/css/nanumbarungothic.css']
+  }
 };
+
 (function() {
 var wf = document.createElement('script');
 wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +

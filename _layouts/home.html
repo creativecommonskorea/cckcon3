@@ -8,40 +8,34 @@
     <meta name="keywords" content="Creative Commons Korea, Internationl Conference, Share, Connect, Creativity, Sharing City, Civic Hacking{% if page.tags %}, {{ page.tags | join: ', ' }} {% endif %}">
     <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
     {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
-
     {% if page.author %}
       {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
     {% endif %}
     {% include open-graph.html %}
     {% if author.google.plus %}<link rel="author" href="https://plus.google.com/{{ author.google.plus }}"/>{% endif %}
-
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-
     <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="cleartype" content="on">
-
-    <style>
-    .sliding-menu-content {
-      top: 0;
-      right: 0;
-      text-align: center;
-      visibility: hidden;
-      height: 100%;
-      width: 100%;
-      -webkit-transform: translateX(100%);
-      -moz-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      -o-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    </style>
-
-    <link rel="stylesheet" href="{{ site.url }}/css/easy-responsive-tabs.css">
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
+    <script src="/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#owl-example").owlCarousel({
+          autoPlay: 3000, //Set AutoPlay to 3 seconds
+          items : 4,
+          itemsDesktop : [1199,3],
+          itemsDesktopSmall : [979,3]
+        });
+      });
+    </script>
+    <script src="{{ site.url }}/js/main.js"></script>
 
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
@@ -52,30 +46,29 @@
   </head>
 
   <body class="home">
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-54013301-1', 'auto');
       ga('send', 'pageview');
     </script>
 
-    {% if page.image.feature %}
-    <div class="page-lead" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
-      <div class="wrap page-lead-content top">
-        <h1>Share Everything,<br />Connect Everything</h1>
-        <h2>2014 CC korea International Conference</h2>
-        <h2>16 September 2014</h2>
-        <!-- <h2>Ferrum Hall @ Ferrum Tower 3F (Junggu Suhadong, Seoul, South Korea)</h2> -->
+    {% include header.html %}
+    {% include navigation-sliding.html %}
 
+    {% if page.image.feature %}
+    <div class="page-lead splash" style="background-image:url({{ site.url }}/images/{{ page.image.feature }});">
+      <div class="wrap page-lead-content">
+        <h1 class="thanks"><span>참가자 여러분 감사합니다.</span></h1>
+        <h1><span>모든 것을 공유하고,</span><br /><span>모든 것을 연결하라</span><span class="sup">끝</span></h1>
+        <h2><span>2014 CC korea 세 번째 국제 컨퍼런스</span></h2>
+        <h2><span>2014년 9월 16일</span></h2>
+        <!-- <h2>Ferrum Hall @ Ferrum Tower 3F (Junggu Suhadong, Seoul, South Korea)</h2> -->
       </div><!-- /.page-lead-content -->
     </div><!-- /.page-lead -->
     {% endif %}
-
-    {% include header.html %}
-    {% include navigation-sliding.html %}
 
     <div class="page-lead desc">
       <div class="wrap page-lead-content">
@@ -90,95 +83,56 @@
       {% include browser-upgrade.html %}
     </div>
 
+    <div class="program-header">
+      <div class="wrap">
+        <!-- <a class="more" href="/programs/">more ></a> -->
+        <h3>Programs</h3></div>
+    </div>
+
+    <div class="program-content clearfix">
+      <div class="tiles wrap">
+        {% for session in site.data.sessions.ko %}
+          {% include session.html %}
+        {% endfor %}
+      </div><!-- /.tiles -->
+    </div>
+
+    <div class="program-header">
+      <div class="wrap">
+        <a target="_blank" class="more" href="https://www.flickr.com/photos/wowcckorea/sets/72157647330022998/">more ></a>
+        <h3>Pictures of the day</h3></div>
+    </div>
+    <div id="owl-example" class="owl-carousel ">
+      <div class="item"><img src="/images/photos/15089298208_4672ab956c_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15260907416_fc3a37fa61_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15097110689_6e96286c9c_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15265251266_ac17625965_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15097172140_5337e8992e_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15272651091_7bbd0e2666_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15097313967_88c1def9f3_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15275598842_e460bd3163_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15097317507_e2603cdf4f_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15280790411_71a7990d44_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15260860926_a7c1c0a2b9_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15280796131_c0a2c23ba9_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15260861916_4073bc4383_z.jpg" alt=""></div>
+      <div class="item"><img src="/images/photos/15283483652_1823079bdd_z.jpg" alt=""></div>
+    </div>
+
+
     <div class="speaker-header">
       <div class="wrap"><a class="more" href="/speakers/">more ></a><h3>Speakers</h3></div>
     </div>
 
-    <div class="speaker-content wrap clearfix">
-      <div class="tiles">
-      {% for speaker in site.data.speakers limit:8 %}
+    <div class="speaker-content clearfix">
+      <div class="tiles wrap">
+      {% for speaker in site.data.speakers limit:6 %}
         {% include speaker.html %}
       {% endfor %}
       </div><!-- /.tiles -->
     </div>
 
-    <div id="info">
-      <div class="wrap">
-        <ul class="resp-tabs-list">
-          <li><h3>컨퍼런스 장소</h3></li>
-          <li><h3>언론 보도</h3></li>
-          <li><h3>후원 문의</h3></li>
-          <!--
-          <li><h3>Venue</h3></li>
-          <li><h3>Press Release</h3></li>
-          <li><h3>Sponsors</h3></li>
-           -->
-        </ul>
-      </div>
-      <div class="resp-tabs-container">
-        <div>
-          <div class="wrap">
-            <div class="map card">
-              <a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.5673453&lng=126.9838691&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=37.5670398%2C126.9838747%3AZ11%3A0.0220265%2C0.0085386&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1407983418790_-639009795" width="534" height="360" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
-              {% assign conf = site.data.conf %}
-              <h3>{{ conf.venue_title_ko }}</h3>
-              <p>{{ conf.venue_address_ko }}</p>
-              <p>{{ conf.venue_address_desc_ko }}</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="wrap">
-            <div class="card">
-            <img src="/images/cc.png" alt="">
-            <p>2014 CC Korea International Conference는<br />
-            공유와 협력으로 긍적적인 변화를 만들고 있는<br />
-            전세계 혁신가들이 한자리에 모이는 자리입니다.</p>
-            <p>현장 취재, 연사 인터뷰 등의 문의는 아래로 연락주세요!</p>
-            <img src="/images/press-contact.png" alt="">
-            <p>담당 권난실</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="wrap">
-            <div class="card">
-            <img src="/images/cc.png" alt="">
-            <p>2014 CC Korea International Conference는<br />
-            세상을 이롭게 하는 혁신적인 변화를 이끄는 <br />
-            사람들의 생각과 경험을 공유하여 새로운 영감을 만들어내고자 합니다.</p>
-            <p>함께 해주실 기업, 단체, 개인은 아래로 연락주세요!</p>
-            <img src="/images/sponsor-contact.png" alt="">
-            <p>담당 강현숙</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-
-  {% include footer.html %}
-
-
-    <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
-    <script src="{{ site.url }}/js/vendor/easyResponsiveTabs.js"></script>
-    <script src="{{ site.url }}/js/main.js"></script>
-    <script>
-      $('#info').easyResponsiveTabs();
-      /**
-       * Dynamic top menu positioning
-       */
-      var height = $('.page-lead').outerHeight(); //number of pixels before modifying styles
-
-      $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > height) {
-          $('#masthead').addClass('fixed');
-        } else {
-          $('#masthead').removeClass('fixed');
-        }
-      });
-    </script>
-    <script src="http://localhost:35729/livereload.js"></script>
+    {% include footer.html %}
 
   </body>
 
