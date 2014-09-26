@@ -13,7 +13,7 @@ Website for the thrid international conference of Creative Commons Korea in 2014
 Share fresh inspirations from people whose efforts are bringing positive changes through technology.
 16 SEP 2014, Ferrum Hall @ Seoul, South Korea"
 ```
-![screenshot of cckcon3](screenshot.png)
+![screenshot of cckcon3](screenshot.jpg)
 
 ### 사용법 How to use
 [jekyll](https://github.com/jekyll/jekyll)이라는 static site generator를 사용합니다. 설치해야 합니다.
