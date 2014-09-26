@@ -8,6 +8,7 @@
 			<a href="{{ domain }}{{ link.url }}" class="title">{{ link.title }}</a>
 			{% if link.excerpt %}<p class="excerpt">{{ link.excerpt }}</p>{% endif %}
 		</li>{% endfor %}
+    <a target="_blank" href="{{ site.data.conf.survey_url }}/" class="btn register">설문 참가</a>
     <li><a class="selector" href="/en/">English</a></li>
 	</ul>
 </nav>
