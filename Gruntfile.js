@@ -35,6 +35,7 @@ module.exports = function(grunt) {
           '_layouts/**',
           '_includes/**',
           '_posts/**',
+          '_program/**',
           '_work/**',
           'css/**',
           'js/**',

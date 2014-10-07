@@ -1,12 +1,15 @@
 ---
-layout: default
+layout: program
 session: 1
 title: (여는 강연) "모든 것을 공유하라"
-speaker: 라이언 머클리 / 크리에이티브 커먼즈 CEO
-excerpt:
+speaker: 라이언 머클리
+excerpt: 
 description:
 slideshare:
 flickr:
+vimeo: http://vimeo.com/107784735
+image:
+  feature: after-banner.jpg
 
 ---
 

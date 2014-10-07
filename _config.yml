@@ -38,5 +38,5 @@ exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefi
 
 collections:
   program:
-    output: false
+    output: true
     permalink: /program/:path/

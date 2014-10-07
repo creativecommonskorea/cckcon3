@@ -1,7 +1,8 @@
 # Programs
 
 ko:
-  - title: 창작과 공유
+  '1':
+    title: 창작과 공유
     speeches:
       - title: (여는 강연) "모든 것을 공유하라"
         speaker: 라이언 머클리 / 크리에이티브 커먼즈 CEO
@@ -23,7 +24,8 @@ ko:
         flickr: https://www.flickr.com/photos/phploveme/15237250236/
 
 
-  - title: 공유와 도시
+  2:
+    title: 공유와 도시
     speeches:
       - title: (여는 강연) "공유 플랫폼으로 도시를 기획하다"
         speaker: 김경민 / 서울대학교 환경대학원 교수
@@ -45,7 +47,8 @@ ko:
         flickr: https://www.flickr.com/photos/phploveme/15260252235/
 
 
-  - title: 공유와 사람
+  3:
+    title: 공유와 사람
     speeches:
       - title: (여는 강연) "모든 것을 연결하라" 윤종수
         speaker: "법무법인 세종 변호사, 글로벌 CC 이사"

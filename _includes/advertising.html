@@ -1,14 +1,7 @@
-<style>
-.responsive-ads { width: 300px; height: 200px; }
-@media(min-width: 520px) { .responsive-ads { width: 468px; height: 60px; } }
-@media(min-width: 768px) { .responsive-ads { width: 160px; height: 600px; } }
-</style>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle responsive-ads"
-	style="display:inline-block"
-	data-ad-client="{{ site.owner.google.ad-client }}"
-	data-ad-slot="{{ site.owner.google.ad-slot }}"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{% for speaker in site.data.speakers %}
+  {% if speaker.name_ko == page.speaker %}
+    <h3>{{ speaker.name_ko }}</h3>
+    <p>{{ speaker.title_ko }}</p>
+    <p>{{ speaker.desc_ko }}</p>
+  {% endif %}
+{% endfor %}
