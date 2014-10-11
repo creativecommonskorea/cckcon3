@@ -269,7 +269,7 @@ body * {
   background-color: $white;
 }
 
-.program-header, .speaker-header {
+.program-header, .speaker-header, .title-header {
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 20px;
   background-color: $white;
@@ -345,7 +345,8 @@ body * {
     /* width: 165px;
     height: 28px;
     background-size: 165px 28px;
-    margin-right: 1em; */
+    margin-right: 1em;
+    */
     width: 140px;
     height: 23px;
     background-size: 140px 23px;
@@ -680,14 +681,67 @@ section {
   article { @include span-columns(8); }
 }
 
-article.tile-one-third {
+.tile-one-third {
   li {
     list-style: none;
   }
 }
+
+.speeches {
+  margin:0; padding:0;
+  .speech a {
+    text-decoration: none !important;
+    margin: 0.5em 0;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
 .download {
   margin-bottom: 3em;
 }
 .button {
   @include button(pill, #cccccc);
 }
+
+.program-content {
+  a {
+    text-decoration: none;
+  }
+  article.tile-one-third li {
+    list-style: decimal;
+  }
+}
+
+.program {
+  h5 {
+    border-bottom: 1px solid #ccc;
+    line-height: 180%;
+    color: $primary-color;
+  }
+  .active {
+    color: $primary-color;
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+

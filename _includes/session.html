@@ -1,14 +1,21 @@
+{% assign sessions =  site.program | group_by:"session" | sort:"name" %}
+
+{% for session in sessions %}
+
 <article class="tile-one-third">
   <h4>
-    세션 {{ forloop.index + 1 }}.<br />
-    {{ session.title }}
+    세션 {{ session.name }}.<br />
+    {{ site.data.sessions.[forloop.index0].title }}
   </h4>
-  <ul>
-    {% for speech in session.speeches %}
-    <li>{{ speech.title }}<br />{{ speech.speaker }}</li>
-    <li class="download">
-      <a target="_blank" href="{{ speech.slideshare }}" class="button">발표 자료</a>
-      <a target="_blank" href="{{ speech.flickr }}" class="button">그래픽 레코딩</a></li>
-    {% endfor %}
-  </ul>
+
+  {% assign speeches =  session.items | sort: 'id' %}
+  <ol>
+  {% for speech in speeches %}
+    <li>
+      <a href="{{ speech.url }}">{{ speech.title }}<br>{{ speech.speaker }} </a>
+    </li>
+  {% endfor %}
+  </ol>
 </article>
+
+{% endfor %}
