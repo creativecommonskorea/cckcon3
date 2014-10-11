@@ -1,0 +1,5 @@
+<div id="owl-example" class="owl-carousel ">
+  {% for photo in site.data.photos %}
+  <div class="item"><img src="/images/photos/{{ photo }}.jpg"></div>
+  {% endfor %}
+</div>
