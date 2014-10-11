@@ -1,13 +1,15 @@
 ---
-layout: default
+id: 3
 session: 2
-title: ????
-speaker: 라////
+title: "공유경제가 도시의 미래에 미치는 영향"
+speaker: 몰리 터너
 excerpt:
 description:
-slideshare:
-flickr:
-
+slideshare: http://www.slideshare.net/cckslide/ss-39276177
+flickr: https://www.flickr.com/photos/phploveme/15260252235/
+flickr_img: https://farm4.staticflickr.com/3917/15260252235_d43988fbe4_c.jpg
+vimeo: https://vimeo.com/108103522
+vimeo_cover: https://i.vimeocdn.com/video/491871776_400.jpg
 ---
 
 팹카페는 3D 프린터나 레이저 커터등을 공유하는 일종의 공유 작업실입니다. 사람들은 맛있는 커피와 만들거리만 있으면 몇 시간이고 이곳에 머물고, 이곳에서 작업을 합니다. 이런 사람들이 창의성을 발휘할 공간을 마련하고 싶었습니다.

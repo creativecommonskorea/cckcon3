@@ -1,13 +1,15 @@
 ---
-layout: default
-session: 3
-title: .....
-speaker: sdkjfhsdjkfh
+id: 2
+session: 2
+title: "공유로 넥스트 도시를 그리다"
+speaker: 권난실
 excerpt:
 description:
-slideshare:
-flickr:
-
+slideshare: http://www.slideshare.net/cckslide/ss-39276132
+flickr: https://www.flickr.com/photos/phploveme/15259862162/
+flickr_img: https://farm4.staticflickr.com/3911/15259862162_05a2a2a8fb_c.jpg
+vimeo: https://vimeo.com/108099188
+vimeo_cover: https://i.vimeocdn.com/video/491872247_400.jpg
 ---
 
 팹카페는 3D 프린터나 레이저 커터등을 공유하는 일종의 공유 작업실입니다. 사람들은 맛있는 커피와 만들거리만 있으면 몇 시간이고 이곳에 머물고, 이곳에서 작업을 합니다. 이런 사람들이 창의성을 발휘할 공간을 마련하고 싶었습니다.

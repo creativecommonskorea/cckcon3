@@ -1,16 +1,15 @@
 ---
-layout: program
-session: 1
-title: (여는 강연) "모든 것을 공유하라"
-speaker: 라이언 머클리
-excerpt: 
+id: 1
+session: 3
+title: (여는 강연) "모든 것을 연결하라"
+speaker: 윤종수
+excerpt:
 description:
-slideshare:
-flickr:
-vimeo: http://vimeo.com/107784735
-image:
-  feature: after-banner.jpg
-
+slideshare: http://www.slideshare.net/cckslide/ss-39311330
+flickr: https://www.flickr.com/photos/phploveme/15073493839/
+flickr_img: https://farm4.staticflickr.com/3843/15073493839_199756e876_c.jpg
+vimeo: https://vimeo.com/108328472
+vimeo_cover: https://i.vimeocdn.com/video/492242134_400.jpg
 ---
 
 팹카페는 3D 프린터나 레이저 커터등을 공유하는 일종의 공유 작업실입니다. 사람들은 맛있는 커피와 만들거리만 있으면 몇 시간이고 이곳에 머물고, 이곳에서 작업을 합니다. 이런 사람들이 창의성을 발휘할 공간을 마련하고 싶었습니다.
