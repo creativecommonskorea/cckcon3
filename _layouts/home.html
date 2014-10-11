@@ -46,14 +46,9 @@
   </head>
 
   <body class="home">
-    <script type="text/javascript">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-54013301-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+    {% if google.analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
 
     {% include header.html %}
     {% include navigation-sliding.html %}
@@ -90,9 +85,7 @@
 
     <div class="program-content clearfix">
       <div class="tiles wrap">
-        {% for session in site.data.sessions.ko %}
           {% include session.html %}
-        {% endfor %}
       </div><!-- /.tiles -->
     </div>
 
@@ -101,23 +94,8 @@
         <a target="_blank" class="more" href="https://www.flickr.com/photos/wowcckorea/sets/72157647330022998/">more ></a>
         <h3>Pictures of the day</h3></div>
     </div>
-    <div id="owl-example" class="owl-carousel ">
-      <div class="item"><img src="/images/photos/15089298208_4672ab956c_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15260907416_fc3a37fa61_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15097110689_6e96286c9c_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15265251266_ac17625965_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15097172140_5337e8992e_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15272651091_7bbd0e2666_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15097313967_88c1def9f3_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15275598842_e460bd3163_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15097317507_e2603cdf4f_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15280790411_71a7990d44_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15260860926_a7c1c0a2b9_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15280796131_c0a2c23ba9_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15260861916_4073bc4383_z.jpg" alt=""></div>
-      <div class="item"><img src="/images/photos/15283483652_1823079bdd_z.jpg" alt=""></div>
-    </div>
 
+    {% include carousel.html %}
 
     <div class="speaker-header">
       <div class="wrap"><a class="more" href="/speakers/">more ></a><h3>Speakers</h3></div>
