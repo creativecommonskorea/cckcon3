@@ -8,6 +8,7 @@ teaser: mainbanner.png
 locale: ko_KR
 locale_alt: en_US
 url: http://localhost:4000
+feature_img: after-banner.jpg
 
 # Jekyll configuration
 
@@ -40,3 +41,11 @@ collections:
   program:
     output: true
     permalink: /program/:path/
+
+defaults:
+  -
+    scope:
+      path: "program"
+      type: "program" # a collection in your site, in plural form
+    values:
+      layout: "program"
