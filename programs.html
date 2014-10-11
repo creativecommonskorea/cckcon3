@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /programs/
+title: programs
+image:
+  feature: after-banner.jpg
+---
+
+{% assign sessions =  site.program | group_by:"session" | sort:"name" %}
+<div class="container wrap">
+{% for session in sessions %}
+  <div class="session clearfix">
+    {% assign session_title = site.data.sessions[forloop.index0].title %}
+    <h4>세션 {{ session.name }}. {{ session_title }}</h4>
+    {% assign speeches = session.items | sort: 'id' %}
+    <ul class="speeches clearfix">
+      {% for speech in speeches %}
+      <li class="speech tile-one-third">
+        <a href="{{ speech.url }}"><img src="{{ speech.vimeo_cover }}" alt=""></a>
+        <p>
+          <a href="{{ speech.url }}">{{ speech.title }}</a><br>
+          {{ speech.speaker }}
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+
+</div>

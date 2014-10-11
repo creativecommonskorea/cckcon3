@@ -1,93 +1,53 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="subject" content="2014 CC Korea 국제 컨퍼런스">
-    <meta name="title" content="2014 CC Korea 국제 컨퍼런스">
-    <meta name="author" content="Creative Commons Korea">
-    <meta name="keywords" content="Creative Commons Korea, Internationl Conference, Share, Connect, Creativity, Sharing City, Civic Hacking">
-    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
-    {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
-    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-    {% if page.author %}
-      {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
-    {% endif %}
-    {% include open-graph.html %}
-    {% if author.google.plus %}<link rel="author" href="https://plus.google.com/{{ author.google.plus }}"/>{% endif %}
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-    <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cleartype" content="on">
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-    <!-- HTML5 Shiv and Media Query Support for IE -->
-    <!--[if lt IE 9]>
-      <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
-      <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
-    <![endif]-->
-  </head>
+---
+layout: default
+---
 
-  <body class="default">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-54013301-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+{% assign vimeo_id = page.vimeo | remove: 'https://vimeo.com/' %}
+{% assign slideshare_id = page.slideshare | remove: 'http://www.slideshare.net/cckslide/ss-' %}
 
-    {% include header.html %}
-    {% include navigation-sliding.html %}
+<div class="program clearfix">
 
-    {% if page.image.feature %}
-    <div class="page-lead splash" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})">
-      <div class="wrap page-lead-content">
-        &nbsp;<br />&nbsp;<br />&nbsp;<br />
+  <div class="tile-two-third">
+    {% include vimeo.html %}
+    {{ content }}
 
-      </div><!-- /.page-lead-content -->
-    </div><!-- /.page-lead -->
-    {% endif %}
+    <h5>그래픽 레코딩</h5>
+    <p><a target="_blank" href="{{ page.flickr }}"><img src="{{ page.flickr_img }}" alt=""></a></p>
 
-    <div id="page-wrapper">
-      {% include browser-upgrade.html %}
-      <div class="speaker-header">
-        <div class="wrap"><h3>{{ page.title | upcase }}</h3></div>
-      </div>
-      <div class="wrap">
+    <h5>발표 자료</h5>
+    {% include slideshare.html %}
 
-        {% assign vimeo_id = page.vimeo | remove: 'http://vimeo.com/' %}
-        {% include vimeo.html %}
+  </div>
 
-        {{ content }}
+  <div class="tile-one-third">
+    <h5>발표자</h5>
+    <ul class="profile">
+      <li>{{ page.speaker }}</li>
+      {% for speaker in site.data.speakers %}
+        {% if speaker.name_ko == page.speaker %}
+          {% assign title = speaker.title_ko %}
+          <li>{{ title }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
 
-      </div>
-      <div class="sponsor-level clearfix">
-        <div class="sponsor">
-          <div class="tile-one-third">
-            <a href="{{ page.url }}" target="_blank"><img src="{{ site.url }}/images/{{ page.logo_img }}" alt="{{ page.title_ko }}" class="logo-img" /></a>
-          </div>
+    {% assign current = page.session | minus: 1 %}
+    {% assign session_title = site.data.sessions[current].title %}
+    <h5>세션 {{ page.session }}. {{ session_title }}</h5>
+    {% assign speeches = site.program | sort: 'id' %}
+    <ul>
+    {% for speech in speeches %}
+      {% if speech.session == page.session %}
+      <li>
+        {% if speech.id == page.id %}
+          <span class="active">{{ speech.title }}</span>
+        {% else %}
+          <a href="{{ speech.url }}">{{ speech.title }}</a>
+        {% endif %}
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
 
-          <div class="tile-two-third">
-            <ul class="profile">
-              <li class="sponsor-title">{{ page.title_ko }}</li>
-              <li class="sponsor-desc">{{ page.desc_ko }}</li>
-            </ul>
-          </div>
-        </div>
-        ????
-
-      </div>
-
-
-
-    </div>
-
-    {% include footer.html %}
-
-    <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
-    <script src="{{ site.url }}/js/main.js"></script>
-  </body>
-
-</html>
+</div>
