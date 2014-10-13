@@ -8,6 +8,7 @@ teaser: mainbanner.png
 locale: ko_KR
 locale_alt: en_US
 url: http://2014con.cckorea.org
+feature_img: after-banner.jpg
 
 # Jekyll configuration
 
@@ -29,9 +30,22 @@ owner:
   google:
     ad-client:
     ad-slot:
-  bio: ???
+    analytics: UA-54013301-1
   avatar: bio-photo.jpg # 160x160 px image for author byline
 disqus-shortname:
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
+
+collections:
+  program:
+    output: true
+    permalink: /program/:path/
+
+defaults:
+  -
+    scope:
+      path: "program"
+      type: "program" # a collection in your site, in plural form
+    values:
+      layout: "program"
