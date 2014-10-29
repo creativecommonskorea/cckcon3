@@ -22,19 +22,16 @@ Requirement: [jekyll](https://github.com/jekyll/jekyll), famous static site gene
 ```
 cd cckcon3
 
-jekyll serve -w
-(or grunt serve)
+bundle install
+jekyll serve
+
+(after bundle install, optionally can use grunt)
+npm -g install grunt-cli
+npm install
+grunt serve
 
 open http://localhost:4000
 ```
-
-
-### 주의 Note
-
-지킬 플러그인을 사용하고 있어서 gh-pages 브랜치에 푸시해도 깃헙이 빌드하지 못합니다. 깃헙 페이지에서 제대로 표시하려면 로컬에서 빌드한 결과물을 푸시하세요.
-
-If you want to publish on github pages, you have to push builded htmls to gh-page branch, because jekyll plugins are used so that github cannot build this codes.
-
 
 
 ### 크레딧 Credits

@@ -8,7 +8,7 @@
 			<li class="heading"><h6>골드 후원</h6></li>
 		{% for sponsor in site.data.sponsors %}
       {% if sponsor.level == 'gold' %}
-			<li class="item-{{ sponsor.title_en | handleize  }}"><a class="{{ sponsor.title_en | handleize }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
+			<li class="item-{{ sponsor.title_en | slugify  }}"><a class="{{ sponsor.title_en | slugify }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
 		{% endfor %}
 		</ul>
@@ -16,7 +16,7 @@
       <li class="heading"><h6>실버 후원</h6></li>
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.level == 'silver' %}
-      <li class="item-{{ sponsor.title_en | handleize }}"><a class="{{ sponsor.title_en | handleize }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
+      <li class="item-{{ sponsor.title_en | slugify }}"><a class="{{ sponsor.title_en | slugify }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
@@ -24,7 +24,7 @@
       <li class="heading"><h6>브론즈 후원</h6></li>
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.level == 'bronze' %}
-      <li class="item-{{ sponsor.title_en | handleize }}"><a class="{{ sponsor.title_en | handleize }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
+      <li class="item-{{ sponsor.title_en | slugify }}"><a class="{{ sponsor.title_en | slugify }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
@@ -32,7 +32,7 @@
       <li class="heading"><h6>미디어 후원</h6></li>
     {% for sponsor in site.data.sponsors %}
       {% if sponsor.level == 'media' %}
-      <li class="item-{{ sponsor.title_en | handleize }}"><a class="{{ sponsor.title_en | handleize }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
+      <li class="item-{{ sponsor.title_en | slugify }}"><a class="{{ sponsor.title_en | slugify }} logo" href="{{ sponsor.url }}" {% if sponsor.url contains 'http' %}target="_blank"{% endif %}>{{ sponsor.title_ko }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
