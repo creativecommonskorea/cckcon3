@@ -45,7 +45,7 @@ body * {
 }
 
 .splash {
-  background-size: auto 100%;
+  background-size: 100% 100%;
   .page-lead-content {
     margin-top: 7em;
     h1, h4 {
@@ -578,7 +578,7 @@ a.more:hover,
     margin-right: 0.8em;
   }
   @include media($large) {
-    margin-right: 1.618em;
+    margin-right: 1.4em;
   }
 }
 
