@@ -30,7 +30,7 @@ $(document).ready(function(){
 WebFontConfig = {
 custom: {
     families: ['Nanum Barun Gothic'],
-    urls: ['{{ site.url }}/css/nanumbarungothic.css']
+    urls: ['/css/nanumbarungothic.css']
   }
 };
 
