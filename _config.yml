@@ -7,7 +7,7 @@ logo: cck-logo.png
 teaser: mainbanner.png
 locale: ko_KR
 locale_alt: en_US
-url: http://localhost:4000
+url: http://creativecommonskorea.github.io/cckcon3/
 feature_img: after-banner.jpg
 
 # Jekyll configuration
