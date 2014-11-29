@@ -6,8 +6,10 @@
         {% else %}
         {% assign domain = site.url %}
     {% endif %}
+    {% if link.title != 'Programs' %}
     <li><a href="{{ domain }}/en{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}{% if page.url == link.url %} class="active"{% endif %}>{{ link.title }}</a></li>
     <!-- <li>{% if page.url == link.url %} Active {% endif %}</li> -->
+    {% endif %}
   {% endfor %}
     <li><a class="lang" href="/">한국어</a></li>
 </ul>
