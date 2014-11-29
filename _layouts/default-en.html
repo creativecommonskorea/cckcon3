@@ -29,13 +29,9 @@
       <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
       <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
     <![endif]-->
-
   </head>
 
   <body class="default en">
-    {% if site.google.analytics %}
-      {% include google-analytics.html %}
-    {% endif %}
 
     {% include header-en.html %}
     {% include navigation-sliding-en.html %}
@@ -63,6 +59,9 @@
 
     <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
+    {% if site.google.analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
 
   </body>
 
