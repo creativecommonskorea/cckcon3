@@ -29,6 +29,9 @@
       <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
       <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
     <![endif]-->
+    {% if site.google.analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
   </head>
 
   <body class="default en">
@@ -59,9 +62,6 @@
 
     <script src="{{ site.url }}/js/vendor/jquery.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
-    {% if site.google.analytics %}
-      {% include google-analytics.html %}
-    {% endif %}
 
   </body>
 
